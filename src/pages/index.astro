@@ -1,7 +1,23 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import "@/styles/global.css";
+import { ImageHero } from "@/components/ImageHero.tsx";
 ---
 
-<Layout title="Simon Twogood">
-	<h1 class="font-bold text-2xl p-5">Simon Twogood</h1>
-</Layout>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Astro description" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<title>Simon Twogood</title>
+</head>
+<body>
+	<div class="flex h-screen">
+		<div class="m-auto">
+		<ImageHero initials="ST" photo="https://avatars.githubusercontent.com/u/496706" client:load />
+		</div>
+	</div>
+</body>
+</html>
