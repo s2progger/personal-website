@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 interface Props {
@@ -8,9 +8,15 @@ interface Props {
 }
 
 export const ProfileImage = ({initials, photo, size}: Props) => {
-  const style = `w-${size} h-${size}`;
+  let style = "w-36 h-36";
+
+  useEffect(() => {
+    console.log("ProfileImage mounted");
+    style = `w-${size} h-${size}`;
+  }, [size]);
+
   return (
-    <Avatar className="h-36 w-36">
+    <Avatar className={style}>
       <AvatarImage src={photo} alt={initials}/>
       <AvatarFallback>{initials}</AvatarFallback>
     </Avatar>
