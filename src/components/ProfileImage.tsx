@@ -10,7 +10,7 @@ interface Props {
 export const ProfileImage = ({initials, photo, size}: Props) => {
   const style = `w-${size} h-${size}`;
   return (
-    <Avatar className={style}>
+    <Avatar className="h-36 w-36">
       <AvatarImage src={photo} alt={initials}/>
       <AvatarFallback>{initials}</AvatarFallback>
     </Avatar>
