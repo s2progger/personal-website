@@ -9,7 +9,7 @@ interface Props {
 export const ImageHero = ({ initials, photo }: Props) => {
   return (
     <Avatar className="w-36 h-36">
-      <AvatarImage src={ photo }/>
+      <AvatarImage src={ photo } alt={ initials }/>
       <AvatarFallback>{ initials }</AvatarFallback>
     </Avatar>
   )
