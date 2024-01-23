@@ -1,5 +1,6 @@
 import type { LinksFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css";
+import TopNav from "~/components/TopNav";
 
 import {
   Links,
@@ -23,7 +24,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="max-w-screen-xl mx-auto p-4">
+        <TopNav />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
