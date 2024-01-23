@@ -6,12 +6,12 @@
   "tailwind": {
     "config": "tailwind.config.mjs",
     "css": "./src/styles/global.css",
-    "baseColor": "zinc",
+    "baseColor": "slate",
     "cssVariables": true,
     "prefix": ""
   },
   "aliases": {
-    "components": "@/components",
+    "components": "@/components/react",
     "utils": "@/lib/utils"
   }
 }
