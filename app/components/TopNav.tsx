@@ -14,9 +14,6 @@ export default function TopNav() {
           </Link>
           <div className="flex items-center gap-1">
             <Button variant="outline" asChild>
-              <Link to="/resume">Resume</Link>
-            </Button>
-            <Button variant="outline" asChild>
               <a href="https://www.linkedin.com/in/simon-twogood" aria-label="LinkedIn Profile"><LinkedInLogoIcon /></a>
             </Button>
             <Button variant="outline" asChild>
