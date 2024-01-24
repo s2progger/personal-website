@@ -21,6 +21,9 @@ export default function TopNav() {
           </Link>
           <div className="flex items-center">
             <Button variant="ghost" asChild>
+              <Link to="/resume" aria-label="Resume">Resume</Link>
+            </Button>
+            <Button variant="ghost" asChild>
               <a href="https://www.linkedin.com/in/simon-twogood" aria-label="LinkedIn Profile"><LinkedInLogoIcon className="size-6" /></a>
             </Button>
             <Button variant="ghost" asChild>

@@ -1,5 +1,12 @@
+import resumeStyles from "~/styles/resume.css";
+import type { LinksFunction } from "@remix-run/node";
 import type {MetaFunction} from "@remix-run/node";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: resumeStyles },
+];
+
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,7 +17,7 @@ export const meta: MetaFunction = () => {
 
 export default function Resume () {
   return (
-    <main className="print:bg-paper my-2 rounded-lg hyphens-manual">
+    <main className="print:bg-paper rounded-lg hyphens-manual">
       {/* Page */}
       <div className="mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter p-10 lg:p-16">
         <header className="flex align-middle items-center mb-8 md:mb-11">
@@ -30,13 +37,15 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="font-bold mb-4 tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                SUMMARY
+              <h2 className="font-bold mb-4 tracking-widest text-primary print:font-normal uppercase">
+                Summary
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
-                <p>An accomplished full stack developer and hands-on technical leader with a proven track record of
-                  architecting high-impact solutions to meet complex business problems.</p>
+                <p>
+                  An accomplished hands-on technical leader and full stack developer with a proven track record of
+                  architecting high-impact solutions to meet complex business problems.
+                </p>
               </section>
 
               <section className="mb-4.5 break-inside-avoid">
@@ -69,8 +78,8 @@ export default function Resume () {
 
             <section className="mb-4.5 break-inside-avoid">
               <header>
-                <h3 className="font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                  SKILLS
+                <h3 className="font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+                  Skills
                 </h3>
               </header>
               <div className="my-3.2 last:pb-1.5">
@@ -162,8 +171,8 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                PROJECTS
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+                Projects
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
@@ -206,8 +215,8 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                EDUCATION
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+                Education
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
@@ -225,10 +234,10 @@ export default function Resume () {
 
             <section className="mb-4.5 break-inside-avoid">
               <header>
-                <p className="leading-normal text-space-cadet-650">
+                <p className="leading-normal text-sm text-space-cadet-650">
                   Microsoft Certified Azure Data Engineer Associate
                 </p>
-                <p className="leading-normal text-space-cadet-650">
+                <p className="leading-normal text-sm  text-space-cadet-650">
                   FrontLine Leadership 2.0 (neuroSHIFT)
                 </p>
               </header>
@@ -240,13 +249,13 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                CONTACT
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+                Contact
               </h2>
 
               <section className="mb-4 break-inside-avoid">
                 <ul className="list-inside">
-                  <li className="leading-normal text-sm text-space-cadet-700 text-md flex space-x-1">
+                  <li className="leading-normal text-space-cadet-700 flex space-x-1">
                     <span>Calgary, Alberta</span>
                   </li>
                   <li
@@ -258,7 +267,7 @@ export default function Resume () {
                         className="inline-block text-space-cadet-550 print:text-black font-normal group-hover:text-space-cadet-700 transition duration-100 ease-in">↗</span>
                     </a>
                   </li>
-                  <li className="flex items-center mt-4 leading-normal text-space-cadet-700 text-sm md:text-base space-x-2">
+                  <li className="flex items-center mt-2 leading-normal text-space-cadet-700 text-sm md:text-base space-x-2">
                     <GitHubLogoIcon />
                     <a href="https://github.com/s2progger" className="group">
                       https://github.com/s2progger
@@ -276,14 +285,14 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                EXPERIENCE
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+                Job History
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
-                    <h3 className="text-lg font-semibold text-space-cadet-700 leading-snug">
+                    <h3 className="font-semibold text-space-cadet-700 leading-snug">
                       Cymax Technology Group
                     </h3>
                     <span className="text-space-cadet-200 text-sm">June 2023 - Present</span>
@@ -299,7 +308,7 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Engineering Manager
                   </h4>
                   <ul className="text-sm">
@@ -316,7 +325,7 @@ export default function Resume () {
               <section className="mb-4.5 break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
-                    <h3 className="text-lg font-semibold text-space-cadet-700 leading-snug">
+                    <h3 className="font-semibold text-space-cadet-700 leading-snug">
                       CostCertified (YCombinator S21)
                     </h3>
                     <span className="text-space-cadet-200 text-sm">Oct 2021 – June 2023</span>
@@ -340,7 +349,7 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Director, Product Development
                   </h4>
 
@@ -354,7 +363,7 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Senior Lead Full Stack Developer
                   </h4>
 
@@ -372,7 +381,7 @@ export default function Resume () {
               <section className="mb-4.5 break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
-                    <h3 className="text-lg font-semibold text-space-cadet-700 leading-snug">
+                    <h3 className="font-semibold text-space-cadet-700 leading-snug">
                       ENMAX Corporation
                     </h3>
                     <span className="text-space-cadet-200 text-sm">2018 – Oct 2021</span>
@@ -394,7 +403,7 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Manager, Digital Innovations
                   </h4>
 
@@ -409,7 +418,7 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Enterprise Data Management and Integrations Lead
                   </h4>
 
@@ -424,11 +433,9 @@ export default function Resume () {
                   </ul>
                 </div>
               </section>
-            </div>
 
-            <section className="break-inside-avoid">
-              <header>
-                <div className="grid grid-cols-3 gap-1">
+              <section className="break-inside-avoid">
+                <div className="grid grid-cols-3 items-end gap-x-2">
                   <div className="font-semibold text-space-cadet-700 leading-snug text-left">Spyglass</div>
                   <div className="text-sm text-left">Senior BI Lead</div>
                   <div className="text-space-cadet-200 text-sm text-right">2013 – 2018</div>
@@ -445,8 +452,8 @@ export default function Resume () {
                   <div className="text-sm text-left">Web Developer</div>
                   <div className="text-space-cadet-200 text-sm text-right">2004 – 2017</div>
                 </div>
-              </header>
-            </section>
+              </section>
+            </div>
 
           </section>
 
