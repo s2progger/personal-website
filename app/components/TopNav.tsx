@@ -19,12 +19,12 @@ export default function TopNav() {
             </svg>
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Simon Twogood</span>
           </Link>
-          <div className="flex items-center gap-1">
-            <Button variant="outline" asChild>
-              <a href="https://www.linkedin.com/in/simon-twogood" aria-label="LinkedIn Profile"><LinkedInLogoIcon /></a>
+          <div className="flex items-center">
+            <Button variant="ghost" asChild>
+              <a href="https://www.linkedin.com/in/simon-twogood" aria-label="LinkedIn Profile"><LinkedInLogoIcon className="size-6" /></a>
             </Button>
-            <Button variant="outline" asChild>
-              <a href="https://github.com/s2progger" aria-label="GitHub Profile"><GitHubLogoIcon /></a>
+            <Button variant="ghost" asChild>
+              <a href="https://github.com/s2progger" aria-label="GitHub Profile"><GitHubLogoIcon className="size-6" /></a>
             </Button>
           </div>
         </div>
