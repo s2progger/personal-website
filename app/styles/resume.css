@@ -13,11 +13,6 @@
         color: black !important;
     }
 
-    .initial {
-        color: transparent !important;
-        text-shadow: 0 0 0 #fff !important;
-    }
-
     h1, h2, h3, p, li {
         color: black !important;
     }
