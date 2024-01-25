@@ -368,7 +368,7 @@ export default function Resume() {
                       Bolster (YCombinator S21)
                     </h3>
                     <span className="date-range text-space-cadet-250 text-sm">
-                      Oct 2021 – June 2023
+                      Oct 2021 - June 2023
                     </span>
                   </div>
                 </header>
@@ -454,7 +454,7 @@ export default function Resume() {
                       ENMAX Corporation
                     </h3>
                     <span className="date-range text-space-cadet-250 text-sm">
-                      2018 – Oct 2021
+                      2018 - Oct 2021
                     </span>
                   </div>
                 </header>
@@ -532,7 +532,7 @@ export default function Resume() {
                   </div>
                   <div className="text-left text-sm">Senior BI Lead</div>
                   <div className="date-range text-space-cadet-250 text-resume-mono text-right text-sm">
-                    2013 – 2018
+                    2013 - 2018
                   </div>
                 </div>
                 <div className="grid grid-cols-3 space-y-2 items-baseline">
@@ -541,7 +541,7 @@ export default function Resume() {
                   </div>
                   <div className="text-left text-sm">Software Developer</div>
                   <div className="date-range text-space-cadet-250 text-resume-mono text-right text-sm">
-                    2011 – 2013
+                    2011 - 2013
                   </div>
                 </div>
                 <div className="grid grid-cols-3 space-y-2 items-baseline">
@@ -550,7 +550,7 @@ export default function Resume() {
                   </div>
                   <div className="text-left text-sm">Software Developer</div>
                   <div className="date-range text-space-cadet-250 text-resume-mono text-mono text-right text-sm">
-                    2007 – 2011
+                    2007 - 2011
                   </div>
                 </div>
                 <div className="grid grid-cols-3 space-y-2 items-baseline">
@@ -559,7 +559,7 @@ export default function Resume() {
                   </div>
                   <div className="text-left text-sm">Web Developer</div>
                   <div className="date-range text-space-cadet-250 text-right text-sm">
-                    2004 – 2017
+                    2004 - 2017
                   </div>
                 </div>
               </section>
