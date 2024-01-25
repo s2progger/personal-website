@@ -23,7 +23,7 @@ export const meta: MetaFunction = () => {
 
 export default function Resume() {
   return (
-    <main className="print:bg-paper text-space-cadet mt-5 hyphens-manual print:m-0 print:py-5">
+    <main className="resume print:bg-paper text-space-cadet mt-5 hyphens-manual print:m-0 print:py-5">
       {/* Page */}
       <div className="page bg-primary print:max-w-letter md:max-w-letter md:h-letter mx-auto max-w-2xl rounded-lg p-10 lg:p-16 print:bg-white print:p-5">
         <header className="mb-8 flex items-center align-middle md:mb-11">
@@ -317,11 +317,11 @@ export default function Resume() {
 
               <section className="break-inside-avoid">
                 <header>
-                  <div className="mb-1 flex justify-between align-baseline">
+                  <div className="mb-2 flex justify-between align-baseline">
                     <h3 className="text-space-cadet-650 font-semibold leading-snug">
                       Cymax Technology Group
                     </h3>
-                    <span className="text-space-cadet-200 text-sm">
+                    <span className="date-range text-space-cadet-250 text-sm">
                       June 2023 - Present
                     </span>
                   </div>
@@ -346,7 +346,7 @@ export default function Resume() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-sm2 text-space-cadet-650 mb-2 mt-2 font-semibold leading-normal">
+                  <h4 className="text-sm2 text-space-cadet-650 mt-3 font-semibold leading-normal">
                     Engineering Manager
                   </h4>
                   <ul className="text-sm">
@@ -361,13 +361,13 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-5 break-inside-avoid">
+              <section className="mt-8 break-inside-avoid">
                 <header>
-                  <div className="mb-1 flex justify-between align-baseline">
+                  <div className="mb-2 flex justify-between align-baseline">
                     <h3 className="text-space-cadet-700 font-semibold leading-snug">
                       CostCertified (YCombinator S21)
                     </h3>
-                    <span className="text-space-cadet-200 text-sm">
+                    <span className="date-range text-space-cadet-250 text-sm">
                       Oct 2021 – June 2023
                     </span>
                   </div>
@@ -416,12 +416,12 @@ export default function Resume() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-sm2 text-space-cadet-650 mb-2 mt-2 font-semibold leading-normal">
+                  <h4 className="text-sm2 text-space-cadet-650 mt-3 font-semibold leading-normal">
                     Director, Product Development
                   </h4>
 
                   <ul className="text-sm">
-                    <li className="mt-2.1 leading-normal">
+                    <li className="leading-normal">
                       Successfully led a cross-functional engineering department
                       to adopt product lead development methodologies, achieving
                       a 600% growth in subscription revenue and a 50% reduction
@@ -431,12 +431,12 @@ export default function Resume() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-sm2 text-space-cadet-650 mb-2 mt-3 font-semibold leading-normal">
+                  <h4 className="text-sm2 text-space-cadet-650 mt-2 font-semibold leading-normal">
                     Senior Lead Full Stack Developer
                   </h4>
 
                   <ul className="text-sm">
-                    <li className="mt-2.1 leading-normal">
+                    <li className="leading-normal">
                       Transformed construction project estimation as a Full
                       Stack Developer by creating an interactive, shoppable
                       platform, leading the full software development lifecycle,
@@ -447,13 +447,13 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-5 break-inside-avoid">
+              <section className="mt-8 break-inside-avoid">
                 <header>
-                  <div className="mb-1 flex justify-between align-baseline">
+                  <div className="mb-2 flex justify-between align-baseline">
                     <h3 className="text-space-cadet-700 font-semibold leading-snug">
                       ENMAX Corporation
                     </h3>
-                    <span className="text-space-cadet-200 text-sm">
+                    <span className="date-range text-space-cadet-250 text-sm">
                       2018 – Oct 2021
                     </span>
                   </div>
@@ -493,12 +493,12 @@ export default function Resume() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-sm2 text-space-cadet-650 mb-2 mt-2 font-semibold leading-normal">
+                  <h4 className="text-sm2 text-space-cadet-650 mt-3 font-semibold leading-normal">
                     Manager, Digital Innovations
                   </h4>
 
                   <ul className="text-sm">
-                    <li className="mt-2.1 leading-normal">
+                    <li className="leading-normal">
                       As a manager of a .NET and Azure development team, I
                       successfully led digital transformation initiatives,
                       including the development and maintenance of a key
@@ -508,12 +508,12 @@ export default function Resume() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-sm2 text-space-cadet-650 mb-2 mt-3 font-semibold leading-normal">
+                  <h4 className="text-sm2 text-space-cadet-650 mt-2 font-semibold leading-normal">
                     Enterprise Data Management and Integrations Lead
                   </h4>
 
                   <ul className="text-sm">
-                    <li className="mt-2.1 leading-normal">
+                    <li className="leading-normal">
                       Championed the development of cloud software solutions,
                       including an enterprise-wide data warehousing strategy,
                       migrating 50TB of data to Microsoft Azure, and designing a
@@ -525,37 +525,40 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-5 break-inside-avoid">
-                <div className="grid grid-cols-3 items-end">
+              <section className="mt-8 break-inside-avoid">
+                <div className="grid grid-cols-3 space-y-2 items-baseline">
                   <div className="text-space-cadet-700 text-left text-sm font-semibold leading-snug">
                     Spyglass
                   </div>
                   <div className="text-left text-sm">Senior BI Lead</div>
-                  <div className="text-space-cadet-200 text-right text-sm">
+                  <div className="date-range text-space-cadet-250 text-resume-mono text-right text-sm">
                     2013 – 2018
                   </div>
-
+                </div>
+                <div className="grid grid-cols-3 space-y-2 items-baseline">
                   <div className="text-space-cadet-700 text-left text-sm font-semibold">
                     Penn West
                   </div>
                   <div className="text-left text-sm">Software Developer</div>
-                  <div className="text-space-cadet-200 text-right text-sm">
+                  <div className="date-range text-space-cadet-250 text-resume-mono text-right text-sm">
                     2011 – 2013
                   </div>
-
+                </div>
+                <div className="grid grid-cols-3 space-y-2 items-baseline">
                   <div className="text-space-cadet-700 text-left text-sm font-semibold">
                     Siconix Inc.
                   </div>
                   <div className="text-left text-sm">Software Developer</div>
-                  <div className="text-space-cadet-200 text-right text-sm">
+                  <div className="date-range text-space-cadet-250 text-resume-mono text-mono text-right text-sm">
                     2007 – 2011
                   </div>
-
+                </div>
+                <div className="grid grid-cols-3 space-y-2 items-baseline">
                   <div className="text-space-cadet-700 text-left text-sm font-semibold">
                     Warp Internet Labs
                   </div>
                   <div className="text-left text-sm">Web Developer</div>
-                  <div className="text-space-cadet-200 text-right text-sm">
+                  <div className="date-range text-space-cadet-250 text-right text-sm">
                     2004 – 2017
                   </div>
                 </div>

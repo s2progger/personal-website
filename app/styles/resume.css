@@ -72,3 +72,11 @@ body .initials-container {
     padding-bottom: 0.6875rem;
     padding-top: 0.6875rem;
 }
+
+body .resume {
+  font-family: "Fira Sans", sans-serif;
+}
+
+body .date-range {
+  font-family: "Fira Mono", monospace;
+}
