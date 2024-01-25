@@ -14,13 +14,17 @@ export const links: LinksFunction = () => [
 export const meta: MetaFunction = () => {
   return [
     { title: "Simon Twogood - Resume" },
-    { name: "description", content: "An accomplished hands-on technical leader and full stack developer with a proven track record of architecting high-impact solutions to meet complex business problems." },
+    {
+      name: "description",
+      content:
+        "An accomplished hands-on technical leader and full stack developer with a proven track record of architecting high-impact solutions to meet complex business problems.",
+    },
   ];
 };
 
 export default function Resume() {
   return (
-    <main className="print:bg-paper text-space-cadet m-5 hyphens-manual print:m-0 print:py-5">
+    <main className="print:bg-paper text-space-cadet mt-5 hyphens-manual print:m-0 print:py-5">
       {/* Page */}
       <div className="page bg-primary print:max-w-letter md:max-w-letter md:h-letter mx-auto max-w-2xl rounded-lg p-10 lg:p-16 print:bg-white print:p-5">
         <header className="mb-8 flex items-center align-middle md:mb-11">
@@ -358,7 +362,7 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-6 break-inside-avoid">
+              <section className="mt-5 break-inside-avoid">
                 <header>
                   <div className="mb-1 flex justify-between align-baseline">
                     <h3 className="text-space-cadet-700 font-semibold leading-snug">
@@ -375,13 +379,13 @@ export default function Resume() {
                       SaaS
                     </li>
                     <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
-                      JavaScript
-                    </li>
-                    <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
                       Node
                     </li>
                     <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
                       Vue
+                    </li>
+                    <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
+                      JavaScript
                     </li>
                     <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
                       PHP
@@ -444,7 +448,7 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-6 break-inside-avoid">
+              <section className="mt-5 break-inside-avoid">
                 <header>
                   <div className="mb-1 flex justify-between align-baseline">
                     <h3 className="text-space-cadet-700 font-semibold leading-snug">
@@ -461,16 +465,13 @@ export default function Resume() {
                       Azure
                     </li>
                     <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
-                      Data Factory
+                      Databricks
                     </li>
                     <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
                       Data Lake
                     </li>
                     <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
                       Streaming
-                    </li>
-                    <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
-                      Databricks
                     </li>
                     <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
                       Serverless
@@ -503,9 +504,7 @@ export default function Resume() {
                       successfully led digital transformation initiatives,
                       including the development and maintenance of a key
                       revenue-generating website and the architectural design of
-                      Calgary's Advanced Metering Infrastructure, while also
-                      establishing a Center of Excellence for Robotic Process
-                      Automation.
+                      Calgary&apos;s Advanced Metering Infrastructure.
                     </li>
                   </ul>
                 </div>
@@ -527,9 +526,9 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-6 break-inside-avoid">
-                <div className="grid grid-cols-3 items-end gap-x-2">
-                  <div className="text-space-cadet-700 text-left font-semibold leading-snug">
+              <section className="mt-5 break-inside-avoid">
+                <div className="grid grid-cols-3 items-end">
+                  <div className="text-space-cadet-700 text-left text-sm font-semibold leading-snug">
                     Spyglass
                   </div>
                   <div className="text-left text-sm">Senior BI Lead</div>
@@ -537,23 +536,23 @@ export default function Resume() {
                     2013 – 2018
                   </div>
 
-                  <div className="text-space-cadet-700 text-left font-semibold">
+                  <div className="text-space-cadet-700 text-left text-sm font-semibold">
                     Penn West
                   </div>
-                  <div className="text-left text-sm">Business Intelligence</div>
+                  <div className="text-left text-sm">Software Developer</div>
                   <div className="text-space-cadet-200 text-right text-sm">
                     2011 – 2013
                   </div>
 
-                  <div className="text-space-cadet-700 text-left font-semibold">
+                  <div className="text-space-cadet-700 text-left text-sm font-semibold">
                     Siconix Inc.
                   </div>
-                  <div className="text-left text-sm">Embedded Developer</div>
+                  <div className="text-left text-sm">Software Developer</div>
                   <div className="text-space-cadet-200 text-right text-sm">
                     2007 – 2011
                   </div>
 
-                  <div className="text-space-cadet-700 text-left font-semibold">
+                  <div className="text-space-cadet-700 text-left text-sm font-semibold">
                     Warp Internet Labs
                   </div>
                   <div className="text-left text-sm">Web Developer</div>
