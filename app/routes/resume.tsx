@@ -14,7 +14,7 @@ export const links: LinksFunction = () => [
 export const meta: MetaFunction = () => {
   return [
     { title: "Simon Twogood - Resume" },
-    { name: "description", content: "" },
+    { name: "description", content: "An accomplished hands-on technical leader and full stack developer with a proven track record of architecting high-impact solutions to meet complex business problems." },
   ];
 };
 
