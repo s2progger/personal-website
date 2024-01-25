@@ -1,0 +1,74 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@screen print {
+    @page {
+        margin: 0;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color: black !important;
+    }
+
+    h1, h2, h3, p, li {
+        color: black !important;
+    }
+
+    html {
+        font-size: 12.288px !important;
+    }
+}
+
+html {
+    font-size: 13.176471px;
+}
+
+/* For Letter size */
+
+@screen sm {
+    html {
+        font-size: calc( 13.176471px + (16 - 13.176471) * (100vw - 640px) / (833 - 640) );
+    }
+}
+
+@screen md {
+    html {
+        font-size: calc( 12.288px + (16 - 12.288) * (100vw - 833px) / (1079.5 - 833) );
+    }
+}
+
+/* For A4 size */
+
+/* @screen sm {
+  html {
+    font-size: calc( 13.176471px + (16 - 13.176471) * (100vw - 640px) / (811 - 640) );
+  }
+}
+
+@screen md {
+  html {
+    font-size: calc( 12.288px + (16 - 12.288) * (100vw - 811px) / (1051 - 811) );
+  }
+} */
+
+@screen lg {
+    html {
+        font-size: 16px;
+    }
+}
+
+body .icon-parent::before {
+    content: "A";
+    width: 0;
+    visibility: hidden;
+    display: inline-block;
+}
+
+body .initials-container {
+    min-width: 2.31rem;
+    padding-bottom: 0.6875rem;
+    padding-top: 0.6875rem;
+}

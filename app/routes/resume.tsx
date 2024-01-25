@@ -1,5 +1,12 @@
+import resumeStyles from "~/styles/resume.css";
+import type { LinksFunction } from "@remix-run/node";
 import type {MetaFunction} from "@remix-run/node";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: resumeStyles },
+];
+
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,14 +17,24 @@ export const meta: MetaFunction = () => {
 
 export default function Resume () {
   return (
-    <main className="print:bg-paper my-2 rounded-lg hyphens-manual">
+    <main className="print:bg-paper font-resume text-space-cadet rounded-lg hyphens-manual bg-white m-5 print:m-0 print:py-5">
       {/* Page */}
-      <div className="mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter p-10 lg:p-16">
+      <div className="mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter p-10 lg:p-16 print:p-5">
         <header className="flex align-middle items-center mb-8 md:mb-11">
-          <div className="initials-container text-neutral leading-none bg-space-cadet-250 font-bold mr-3">
+          <div className="print:hidden initials-container leading-none bg-space-cadet-250 text-primary font-bold mr-3" >
             <div className="initial text-center">S</div>
             <div className="text-center initial">2</div>
           </div>
+          <svg width="1em" height="1em" viewBox="0 0 256 256" className="hidden print:block mr-2 size-8" data-icon="ph:wave-triangle-duotone">
+            <symbol id="ai:ph:wave-triangle-duotone">
+              <g fill="currentColor">
+                <path d="m76 56l52 72H24Zm156 72H128l52 72Z" opacity=".2"/>
+                <path
+                  d="m238.48 132.68l-52 72a8 8 0 0 1-13 0L76 69.66l-45.51 63a8 8 0 1 1-13-9.36l52-72a8 8 0 0 1 13 0l97.51 135l45.51-63a8 8 0 1 1 13 9.36Z"/>
+              </g>
+            </symbol>
+            <use xlinkHref="#ai:ph:wave-triangle-duotone"></use>
+          </svg>
           <h1 className="text-3xl font-semibold">Simon Twogood</h1>
         </header>
         {/* end Name */}
@@ -30,21 +47,23 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="font-bold mb-4 tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                SUMMARY
+              <h2 className="font-bold mb-4 tracking-widest text-space-cadet-250 print:font-normal uppercase">
+                Summary
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
-                <p>An accomplished full stack developer and hands-on technical leader with a proven track record of
-                  architecting high-impact solutions to meet complex business problems.</p>
+                <p>
+                  An accomplished hands-on technical leader and full stack developer with a proven track record of
+                  architecting high-impact solutions to meet complex business problems.
+                </p>
               </section>
 
               <section className="mb-4.5 break-inside-avoid">
                 <header>
-                  <h3 className="text-base font-semibold text-space-cadet-700 leading-snug">
+                  <h3 className="text-base font-semibold text-space-cadet-600 leading-snug">
                     Full Stack Software Developer
                   </h3>
-                  <p className="leading-normal text-sm text-space-cadet-250">
+                  <p className="leading-normal text-sm text-space-cadet-250 ">
                     Since 2004
                   </p>
                 </header>
@@ -54,7 +73,7 @@ export default function Resume () {
 
             <section className="mb-4.5 break-inside-avoid">
               <header>
-                <h3 className="text-base font-semibold text-space-cadet-700 leading-snug">
+                <h3 className="text-base font-semibold text-space-cadet-600 leading-snug">
                   Hands-on Technical Leader
                 </h3>
                 <p className="leading-normal text-sm text-space-cadet-250">
@@ -69,8 +88,8 @@ export default function Resume () {
 
             <section className="mb-4.5 break-inside-avoid">
               <header>
-                <h3 className="font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                  SKILLS
+                <h3 className="font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
+                  Skills
                 </h3>
               </header>
               <div className="my-3.2 last:pb-1.5">
@@ -162,8 +181,8 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                PROJECTS
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
+                Projects
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
@@ -206,13 +225,13 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                EDUCATION
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
+                Education
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
                 <header>
-                  <h3 className="text-lg font-semibold text-space-cadet-700 leading-snug">
+                  <h3 className="font-semibold text-space-cadet-700 leading-snug">
                     University of Calgary
                   </h3>
                   <p className="leading-normal text-sm text-space-cadet-650">
@@ -225,10 +244,10 @@ export default function Resume () {
 
             <section className="mb-4.5 break-inside-avoid">
               <header>
-                <p className="leading-normal text-space-cadet-650">
+                <p className="leading-normal text-sm text-space-cadet-650">
                   Microsoft Certified Azure Data Engineer Associate
                 </p>
-                <p className="leading-normal text-space-cadet-650">
+                <p className="leading-normal text-sm  text-space-cadet-650">
                   FrontLine Leadership 2.0 (neuroSHIFT)
                 </p>
               </header>
@@ -240,13 +259,13 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                CONTACT
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
+                Contact
               </h2>
 
               <section className="mb-4 break-inside-avoid">
                 <ul className="list-inside">
-                  <li className="leading-normal text-sm text-space-cadet-700 text-md flex space-x-1">
+                  <li className="leading-normal text-space-cadet-700 flex space-x-1">
                     <span>Calgary, Alberta</span>
                   </li>
                   <li
@@ -258,7 +277,7 @@ export default function Resume () {
                         className="inline-block text-space-cadet-550 print:text-black font-normal group-hover:text-space-cadet-700 transition duration-100 ease-in">↗</span>
                     </a>
                   </li>
-                  <li className="flex items-center mt-4 leading-normal text-space-cadet-700 text-sm md:text-base space-x-2">
+                  <li className="flex items-center mt-2 leading-normal text-space-cadet-700 text-sm md:text-base space-x-2">
                     <GitHubLogoIcon />
                     <a href="https://github.com/s2progger" className="group">
                       https://github.com/s2progger
@@ -276,14 +295,14 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-sm2 text-space-cadet-150 print:font-normal">
-                EXPERIENCE
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
+                Job History
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
-                    <h3 className="text-lg font-semibold text-space-cadet-700 leading-snug">
+                    <h3 className="font-semibold text-space-cadet-700 leading-snug">
                       Cymax Technology Group
                     </h3>
                     <span className="text-space-cadet-200 text-sm">June 2023 - Present</span>
@@ -299,12 +318,11 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Engineering Manager
                   </h4>
                   <ul className="text-sm">
                     <li>
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       Enhanced product deployment reliability through the implementation of automated CI/CD pipelines in
                       Microsoft Azure, and transitioned the team to Trunk Based Development, increasing deployment
                       frequency from monthly to daily.
@@ -316,7 +334,7 @@ export default function Resume () {
               <section className="mb-4.5 break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
-                    <h3 className="text-lg font-semibold text-space-cadet-700 leading-snug">
+                    <h3 className="font-semibold text-space-cadet-700 leading-snug">
                       CostCertified (YCombinator S21)
                     </h3>
                     <span className="text-space-cadet-200 text-sm">Oct 2021 – June 2023</span>
@@ -340,13 +358,12 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Director, Product Development
                   </h4>
 
                   <ul className="text-sm">
                     <li className="mt-2.1 leading-normal">
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       Successfully led a cross-functional engineering department to adopt product lead development
                       methodologies, achieving a 600% growth in subscription revenue and a 50% reduction in processing
                       fees through strategic partnership and infrastructure enhancements.
@@ -354,13 +371,12 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Senior Lead Full Stack Developer
                   </h4>
 
                   <ul className="text-sm">
                     <li className="mt-2.1 leading-normal">
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       Transformed construction project estimation as a Full Stack Developer by creating an interactive,
                       shoppable platform, leading the full software development lifecycle, and architecting a
                       multi-merchant payment platform that achieved $5 million in annual payments in its first year.
@@ -372,7 +388,7 @@ export default function Resume () {
               <section className="mb-4.5 break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
-                    <h3 className="text-lg font-semibold text-space-cadet-700 leading-snug">
+                    <h3 className="font-semibold text-space-cadet-700 leading-snug">
                       ENMAX Corporation
                     </h3>
                     <span className="text-space-cadet-200 text-sm">2018 – Oct 2021</span>
@@ -394,13 +410,12 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Manager, Digital Innovations
                   </h4>
 
                   <ul className="text-sm">
                     <li className="mt-2.1 leading-normal">
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       As a manager of a .NET and Azure development team, I successfully led digital transformation
                       initiatives, including the development and maintenance of a key revenue-generating website and the
                       architectural design of Calgary's Advanced Metering Infrastructure, while also establishing a
@@ -409,13 +424,12 @@ export default function Resume () {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="leading-normal font-semibold text-space-cadet-650 mb-2 mt-3">
+                  <h4 className="leading-normal font-semibold text-sm2 text-space-cadet-650 mb-2 mt-3">
                     Enterprise Data Management and Integrations Lead
                   </h4>
 
                   <ul className="text-sm">
                     <li className="mt-2.1 leading-normal">
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       Championed the development of cloud software solutions, including an enterprise-wide data
                       warehousing strategy, migrating 50TB of data to Microsoft Azure, and designing a corporate
                       financial forecasting model, significantly enhancing reliability, cost-efficiency, and
@@ -424,11 +438,9 @@ export default function Resume () {
                   </ul>
                 </div>
               </section>
-            </div>
 
-            <section className="break-inside-avoid">
-              <header>
-                <div className="grid grid-cols-3 gap-1">
+              <section className="break-inside-avoid">
+                <div className="grid grid-cols-3 items-end gap-x-2">
                   <div className="font-semibold text-space-cadet-700 leading-snug text-left">Spyglass</div>
                   <div className="text-sm text-left">Senior BI Lead</div>
                   <div className="text-space-cadet-200 text-sm text-right">2013 – 2018</div>
@@ -445,8 +457,8 @@ export default function Resume () {
                   <div className="text-sm text-left">Web Developer</div>
                   <div className="text-space-cadet-200 text-sm text-right">2004 – 2017</div>
                 </div>
-              </header>
-            </section>
+              </section>
+            </div>
 
           </section>
 
