@@ -1,6 +1,5 @@
 import resumeStyles from "~/styles/resume.css";
-import type { LinksFunction } from "@remix-run/node";
-import type { MetaFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
