@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        'resume': ['"Fira Sans"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -52,6 +55,17 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        resume: "card",
+        'space-cadet': {
+          DEFAULT: "#081224",
+          "150": "#03336d",
+          "200": "#052c5e",
+          "250": "#07264e",
+          "550": "#081f40",
+          "600": "#091931",
+          "650": "#081224",
+          "700": "#020817",
         },
       },
       fontSize: {

@@ -66,3 +66,9 @@ body .icon-parent::before {
     visibility: hidden;
     display: inline-block;
 }
+
+body .initials-container {
+    min-width: 2.31rem;
+    padding-bottom: 0.6875rem;
+    padding-top: 0.6875rem;
+}

@@ -17,11 +17,11 @@ export const meta: MetaFunction = () => {
 
 export default function Resume () {
   return (
-    <main className="print:bg-paper rounded-lg hyphens-manual">
+    <main className="print:bg-paper font-resume text-space-cadet rounded-lg hyphens-manual bg-white m-5 print:m-0 print:py-5">
       {/* Page */}
       <div className="mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter p-10 lg:p-16 print:p-5">
         <header className="flex align-middle items-center mb-8 md:mb-11">
-          <div className="print:hidden initials-container leading-none bg-space-cadet-250 font-bold mr-3">
+          <div className="print:hidden initials-container leading-none bg-space-cadet-250 text-primary font-bold mr-3" >
             <div className="initial text-center">S</div>
             <div className="text-center initial">2</div>
           </div>
@@ -47,7 +47,7 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="font-bold mb-4 tracking-widest text-primary print:font-normal uppercase">
+              <h2 className="font-bold mb-4 tracking-widest text-space-cadet-250 print:font-normal uppercase">
                 Summary
               </h2>
 
@@ -60,10 +60,10 @@ export default function Resume () {
 
               <section className="mb-4.5 break-inside-avoid">
                 <header>
-                  <h3 className="text-base font-semibold text-space-cadet-700 leading-snug">
+                  <h3 className="text-base font-semibold text-space-cadet-600 leading-snug">
                     Full Stack Software Developer
                   </h3>
-                  <p className="leading-normal text-sm text-space-cadet-250">
+                  <p className="leading-normal text-sm text-space-cadet-250 ">
                     Since 2004
                   </p>
                 </header>
@@ -73,7 +73,7 @@ export default function Resume () {
 
             <section className="mb-4.5 break-inside-avoid">
               <header>
-                <h3 className="text-base font-semibold text-space-cadet-700 leading-snug">
+                <h3 className="text-base font-semibold text-space-cadet-600 leading-snug">
                   Hands-on Technical Leader
                 </h3>
                 <p className="leading-normal text-sm text-space-cadet-250">
@@ -88,7 +88,7 @@ export default function Resume () {
 
             <section className="mb-4.5 break-inside-avoid">
               <header>
-                <h3 className="font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+                <h3 className="font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
                   Skills
                 </h3>
               </header>
@@ -181,7 +181,7 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
                 Projects
               </h2>
 
@@ -225,13 +225,13 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
                 Education
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
                 <header>
-                  <h3 className="text-lg font-semibold text-space-cadet-700 leading-snug">
+                  <h3 className="font-semibold text-space-cadet-700 leading-snug">
                     University of Calgary
                   </h3>
                   <p className="leading-normal text-sm text-space-cadet-650">
@@ -259,7 +259,7 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
                 Contact
               </h2>
 
@@ -295,7 +295,7 @@ export default function Resume () {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
 
-              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-150 print:font-normal uppercase">
+              <h2 className="mb-4 font-bold tracking-widest text-space-cadet-250 print:font-normal uppercase">
                 Job History
               </h2>
 
@@ -323,7 +323,6 @@ export default function Resume () {
                   </h4>
                   <ul className="text-sm">
                     <li>
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       Enhanced product deployment reliability through the implementation of automated CI/CD pipelines in
                       Microsoft Azure, and transitioned the team to Trunk Based Development, increasing deployment
                       frequency from monthly to daily.
@@ -365,7 +364,6 @@ export default function Resume () {
 
                   <ul className="text-sm">
                     <li className="mt-2.1 leading-normal">
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       Successfully led a cross-functional engineering department to adopt product lead development
                       methodologies, achieving a 600% growth in subscription revenue and a 50% reduction in processing
                       fees through strategic partnership and infrastructure enhancements.
@@ -379,7 +377,6 @@ export default function Resume () {
 
                   <ul className="text-sm">
                     <li className="mt-2.1 leading-normal">
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       Transformed construction project estimation as a Full Stack Developer by creating an interactive,
                       shoppable platform, leading the full software development lifecycle, and architecting a
                       multi-merchant payment platform that achieved $5 million in annual payments in its first year.
@@ -419,7 +416,6 @@ export default function Resume () {
 
                   <ul className="text-sm">
                     <li className="mt-2.1 leading-normal">
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       As a manager of a .NET and Azure development team, I successfully led digital transformation
                       initiatives, including the development and maintenance of a key revenue-generating website and the
                       architectural design of Calgary's Advanced Metering Infrastructure, while also establishing a
@@ -434,7 +430,6 @@ export default function Resume () {
 
                   <ul className="text-sm">
                     <li className="mt-2.1 leading-normal">
-                      <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                       Championed the development of cloud software solutions, including an enterprise-wide data
                       warehousing strategy, migrating 50TB of data to Microsoft Azure, and designing a corporate
                       financial forecasting model, significantly enhancing reliability, cost-efficiency, and
