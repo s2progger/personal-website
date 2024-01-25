@@ -365,7 +365,7 @@ export default function Resume() {
                 <header>
                   <div className="mb-2 flex justify-between align-baseline">
                     <h3 className="text-space-cadet-700 font-semibold leading-snug">
-                      CostCertified (YCombinator S21)
+                      Bolster (YCombinator S21)
                     </h3>
                     <span className="date-range text-space-cadet-250 text-sm">
                       Oct 2021 – June 2023
