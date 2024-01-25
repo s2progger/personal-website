@@ -1,14 +1,14 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        'resume': ['"Fira Sans"', 'sans-serif'],
+        resume: ['"Fira Sans"', "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -56,8 +56,8 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        resume: "card",
-        'space-cadet': {
+        skill: "#e9ecee",
+        "space-cadet": {
           DEFAULT: "#081224",
           "150": "#03336d",
           "200": "#052c5e",
@@ -72,14 +72,14 @@ const config = {
         sm2: "0.9375rem", // 15px label
       },
       maxWidth: {
-        "letter": "66.40625rem",
-        "a4": "64.609375rem"
+        letter: "66.40625rem",
+        a4: "64.609375rem",
       },
       height: {
-        "letter": "85.9375rem",
+        letter: "85.9375rem",
         "letter-col": "71.625rem",
         "letter-col-full": "77.9375rem",
-        "a4": "91.350883rem",
+        a4: "91.350883rem",
         "a4-col": "77.038383rem",
         "a4-col-full": "83.350883rem",
       },
@@ -125,7 +125,7 @@ const config = {
     require("tailwindcss-animate"),
     plugin(function ({ addBase, addUtilities, theme }) {
       addBase({
-        "body": {
+        body: {
           "-webkit-font-smoothing": "subpixel-antialiased",
         },
       });
@@ -194,11 +194,11 @@ const config = {
           "font-feature-settings": "'case' on",
         },
         ".hyphens-manual": {
-          "hyphens": "manual",
+          hyphens: "manual",
         },
-      }
+      };
 
-      addUtilities(typographyUtils)
+      addUtilities(typographyUtils);
 
       /**
        * Project Spicific Utilities
@@ -208,13 +208,13 @@ const config = {
           "box-shadow": `inset 0 0 0 1px ${theme("colors.gray.400")}`,
         },
         ".print-box": {
-          "border": '1px solid black !important',
-          "background": 'white !important',
-          "color": 'black !important',
-        }
-      }
+          border: "1px solid black !important",
+          background: "white !important",
+          color: "black !important",
+        },
+      };
 
-      addUtilities(projectSpecificUtils)
+      addUtilities(projectSpecificUtils);
 
       /**
        * CSS Multi-Column Layout Utilities
@@ -250,11 +250,11 @@ const config = {
         ".col-fill-balance": {
           "column-fill": "balance",
         },
-      }
+      };
 
-      addUtilities(columnUtils)
+      addUtilities(columnUtils);
     }),
   ],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

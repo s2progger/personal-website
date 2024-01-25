@@ -1,7 +1,7 @@
 import resumeStyles from "~/styles/resume.css";
 import type { LinksFunction } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/node";
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon, LinkedInLogoIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: resumeStyles },
@@ -16,9 +16,9 @@ export const meta: MetaFunction = () => {
 
 export default function Resume() {
   return (
-    <main className="print:bg-paper font-resume text-space-cadet m-5 hyphens-manual print:m-0 print:py-5">
+    <main className="print:bg-paper text-space-cadet m-5 hyphens-manual print:m-0 print:py-5">
       {/* Page */}
-      <div className="page bg-primary print:max-w-letter md:max-w-letter md:h-letter mx-auto max-w-2xl rounded-lg p-10 lg:p-16 print:p-5">
+      <div className="page bg-primary print:bg-white print:max-w-letter md:max-w-letter md:h-letter mx-auto max-w-2xl rounded-lg p-10 lg:p-16 print:p-5">
         <header className="mb-8 flex items-center align-middle md:mb-11">
           <div className="initials-container bg-space-cadet-250 text-primary mr-3 font-bold leading-none print:hidden">
             <div className="initial text-center">S</div>
@@ -93,94 +93,94 @@ export default function Resume() {
               </header>
               <div className="my-3.2 last:pb-1.5">
                 <ul className="text-md -mr-1.6 -mb-1.6 flex flex-wrap leading-relaxed">
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Node JS
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     TypeScript
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     JavaScript
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Java
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Kotlin
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     C#
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Python
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     PHP
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Ruby
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Rails
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     SQL
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     NoSQL
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     React
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Vue
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Angular
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     AWS Lambda
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Serverless
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     PostgreSQL
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     MySQL
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Azure SQL
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     GraphQL
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     AWS
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Docker
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     CI/CD
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Azure
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Databricks
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Event Driven Architecture
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Scrum
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Kanban
                   </li>
-                  <li className="mr-1.6 mb-1.6 text-secondary bg-primary print:print-box px-2.5 text-base">
+                  <li className="mr-1.6 mb-1.6 text-secondary bg-skill hover:bg-indigo-100 print:prnt-box px-2.5 text-base">
                     Product Management
                   </li>
                 </ul>
@@ -200,13 +200,12 @@ export default function Resume() {
                   <h3 className="text-space-cadet-700 font-semibold leading-snug">
                     <a
                       href="https://github.com/s2progger/kt-data-flow"
-                      className="group"
+                      className="flex items-center group hover:text-fuchsia-900 hover:underline"
                     >
-                      Kt Data Flow
-                      <span className="text-space-cadet-550 group-hover:text-space-cadet-700 inline-block font-normal transition duration-100 ease-in print:text-black">
-                        ↗
-                      </span>
+                      <span>Kt Data Flow</span>
+                      <ArrowTopRightIcon />
                     </a>
+
                   </h3>
                 </header>
                 <p className="mt-2.1 text-sm leading-normal">
@@ -220,12 +219,10 @@ export default function Resume() {
                 <h3 className="text-space-cadet-700 font-semibold leading-snug">
                   <a
                     href="https://github.com/antrica-labs/og-liability-tracker"
-                    className="group"
+                    className="flex items-center group hover:text-fuchsia-900 hover:underline"
                   >
-                    O&G Liability Tracker
-                    <span className="text-space-cadet-550 group-hover:text-space-cadet-700 inline-block font-normal transition duration-100 ease-in print:text-black">
-                      ↗
-                    </span>
+                    <span>O&G Liability Tracker</span>
+                    <ArrowTopRightIcon />
                   </a>
                 </h3>
               </header>
@@ -280,26 +277,22 @@ export default function Resume() {
                   <li className="text-space-cadet-700 flex space-x-1 leading-normal">
                     <span>Calgary, Alberta</span>
                   </li>
-                  <li className="text-space-cadet-700 mt-4 flex items-center space-x-2 align-baseline text-sm leading-normal md:text-base">
-                    <LinkedInLogoIcon />
+                  <li className="text-space-cadet-700 mt-4 flex items-center align-baseline text-sm leading-normal md:text-base">
+                    <LinkedInLogoIcon className="mr-2"/>
                     <a
-                      href="https://linkedin.com/in/simon-twogood/"
-                      className="group"
+                      href="https://linkedin.com/in/simon-twogood"
+                      className="group hover:text-fuchsia-900 hover:underline"
                     >
-                      https://linkedin.com/in/simon-twogood/
-                      <span className="text-space-cadet-550 group-hover:text-space-cadet-700 inline-block font-normal transition duration-100 ease-in print:text-black">
-                        ↗
-                      </span>
+                      https://linkedin.com/in/simon-twogood
                     </a>
+                    <ArrowTopRightIcon />
                   </li>
-                  <li className="text-space-cadet-700 mt-2 flex items-center space-x-2 text-sm leading-normal md:text-base">
-                    <GitHubLogoIcon />
-                    <a href="https://github.com/s2progger" className="group">
+                  <li className="text-space-cadet-700 mt-2 flex items-center text-sm leading-normal md:text-base">
+                    <GitHubLogoIcon className="mr-2"/>
+                    <a href="https://github.com/s2progger" className="group hover:text-fuchsia-900 hover:underline">
                       https://github.com/s2progger
-                      <span className="text-space-cadet-550 group-hover:text-space-cadet-700 inline-block font-normal transition duration-100 ease-in print:text-black">
-                        ↗
-                      </span>
                     </a>
+                    <ArrowTopRightIcon />
                   </li>
                 </ul>
               </section>
@@ -313,10 +306,10 @@ export default function Resume() {
                 Job History
               </h2>
 
-              <section className="mb-4.5 break-inside-avoid">
+              <section className="break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
-                    <h3 className="text-space-cadet-700 font-semibold leading-snug">
+                    <h3 className="text-space-cadet-650 font-semibold leading-snug">
                       Cymax Technology Group
                     </h3>
                     <span className="text-space-cadet-200 text-sm">
@@ -326,19 +319,19 @@ export default function Resume() {
                 </header>
                 <div>
                   <ul className="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       C#
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       TypeScript
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       React
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Azure
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Functions
                     </li>
                   </ul>
@@ -359,7 +352,7 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mb-4.5 break-inside-avoid">
+              <section className="mt-8 break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
                     <h3 className="text-space-cadet-700 font-semibold leading-snug">
@@ -372,43 +365,43 @@ export default function Resume() {
                 </header>
                 <div>
                   <ul className="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       SaaS
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       JavaScript
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Node
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Vue
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       PHP
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Docker
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       GraphQL
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       AWS
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       OpenSearch
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       RDS
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       SQS
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Lambda
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       AppSync
                     </li>
                   </ul>
@@ -445,7 +438,7 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mb-4.5 break-inside-avoid">
+              <section className="mt-8 break-inside-avoid">
                 <header>
                   <div className="flex justify-between align-baseline">
                     <h3 className="text-space-cadet-700 font-semibold leading-snug">
@@ -458,37 +451,37 @@ export default function Resume() {
                 </header>
                 <div>
                   <ul className="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Azure
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Data Factory
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Data Lake
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Streaming
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Databricks
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Serverless
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Azure SQL
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       React
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       JavaScript
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       Python
                     </li>
-                    <li className="bg-primary text-secondary print:print-box m-0.5 px-2">
+                    <li className="bg-skill text-secondary hover:bg-indigo-100 print:prnt-box m-0.5 px-2">
                       C#
                     </li>
                   </ul>
@@ -528,7 +521,7 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="break-inside-avoid">
+              <section className="mt-8 break-inside-avoid">
                 <div className="grid grid-cols-3 items-end gap-x-2">
                   <div className="text-space-cadet-700 text-left font-semibold leading-snug">
                     Spyglass
