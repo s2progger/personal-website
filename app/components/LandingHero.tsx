@@ -11,8 +11,12 @@ export default function LandingHero() {
           and I&rsquo;m an engineering manager and full stack developer with a passion for building great products.
         </h2>
       </div>
-      <div className="md:basis-1/3">
-        <img src="https://avatars.githubusercontent.com/u/496706" alt="ST" className="ml-auto h-48 w-48 rounded-full" />
+      <div className="w-full md:basis-1/3">
+        <img
+          src="https://avatars.githubusercontent.com/u/496706"
+          alt="ST"
+          className="mx-auto h-48 w-48 rounded-full md:mx-0 md:ml-auto"
+        />
       </div>
     </section>
   );
