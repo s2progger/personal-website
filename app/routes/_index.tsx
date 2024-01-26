@@ -3,7 +3,7 @@ import type { MetaFunction } from "@remix-run/node";
 export const meta: MetaFunction = () => {
   return [
     { title: "Simon Twogood" },
-    { name: "description", content: "Welcome to Remix!" },
+    { name: "description", content: "Let's build things." },
   ];
 };
 
@@ -19,7 +19,7 @@ export default function Index() {
         </h2>
       </div>
       <div className="md:basis-1/3">
-        <img src="https://avatars.githubusercontent.com/u/496706" alt="ST" className="rounded-full h-48 w-48 mx-auto"/>
+        <img src="https://avatars.githubusercontent.com/u/496706" alt="ST" className="rounded-full h-48 w-48 mx-auto" />
       </div>
     </section>
   );
