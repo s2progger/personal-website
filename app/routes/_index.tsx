@@ -68,7 +68,7 @@ export default function Index() {
       <section className="pt-5 lg:px-32 lg:pt-10">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">Projects</CardTitle>
+            <CardTitle className="text-2xl">Project Highlights</CardTitle>
           </CardHeader>
           <CardContent>
             <Suspense fallback={<Loading />}>
