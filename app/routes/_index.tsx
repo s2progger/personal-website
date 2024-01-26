@@ -1,26 +1,128 @@
+import { graphql } from "@octokit/graphql";
 import type { MetaFunction } from "@remix-run/node";
+import { Await, useLoaderData, useRouteError } from "@remix-run/react";
+import { defer } from "@remix-run/cloudflare";
+import { Suspense } from "react";
+import LandingHero from "~/components/LandingHero";
+import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
+
+const PROJECTS_TO_SHOW = 5;
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "Simon Twogood" },
-    { name: "description", content: "Let's build things." },
-  ];
+  return [{ title: "Simon Twogood" }, { name: "description", content: "Let's build things." }];
 };
 
+interface Repository {
+  name: string;
+  description: string;
+  url: string;
+}
+
+interface User {
+  pinnedItems: {
+    nodes: Repository[];
+  };
+}
+
+interface GraphQLResponse {
+  user: User;
+}
+interface GitRepoInfo {
+  name: string;
+  description: string;
+  url: string;
+}
+
+export async function loader({ context }) {
+  const token = context.env.GITHUB_PAT;
+  const graphqlWithAuth = graphql.defaults({
+    headers: {
+      authorization: `token ${token}`,
+    },
+  });
+
+  const query = `
+      {
+        user(login: "s2progger") {
+          pinnedItems(first: ${PROJECTS_TO_SHOW}, types: [REPOSITORY]) {
+            nodes {
+              ... on Repository {
+                name
+                description
+                url
+              }
+            }
+          }
+        }
+      }
+    `;
+
+  return defer({ data: graphqlWithAuth<GraphQLResponse>(query) });
+}
+
 export default function Index() {
+  const data = useLoaderData<GitRepoInfo[]>().data;
   return (
-    <section className="flex flex-wrap justify-evenly justify-items-stretch content-center items-center pt-20 md:pt-36 px-5 lg:px-20">
-      <div className="md:basis-2/3 pb-10">
-        <h1 className="text-2xl md:text-3xl mb-4">
-          Hi there! 👋
-        </h1>
-        <h2 className="text-3xl md:text-5xl font-bold">
-          My name is <span className="whitespace-nowrap bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Simon</span> and I&rsquo;m an engineering manager and full stack developer with a passion for building great products.
-        </h2>
-      </div>
-      <div className="md:basis-1/3">
-        <img src="https://avatars.githubusercontent.com/u/496706" alt="ST" className="rounded-full h-48 w-48 mx-auto" />
-      </div>
-    </section>
+    <>
+      <LandingHero />
+      <section className="pt-5 lg:px-32 lg:pt-10">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl">Projects</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Suspense fallback={<Loading />}>
+              <Await resolve={data}>
+                {(data) => (
+                  <ul>
+                    {data.user.pinnedItems.nodes.map((repo) => (
+                      <li key={repo.name} className="mb-5 last:mb-0">
+                        <h2 className="font-bold">
+                          <a href={repo.url} target="_blank" rel="noopener noreferrer">
+                            {repo.name}
+                          </a>
+                        </h2>
+                        <p className="text-sm text-muted-foreground">{repo.description}</p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </Await>
+            </Suspense>
+          </CardContent>
+        </Card>
+      </section>
+    </>
+  );
+}
+
+function Loading() {
+  return (
+    <ul>
+      {Array.from({ length: PROJECTS_TO_SHOW }).map((_, i) => (
+        <li key={i} className="mb-5 last:mb-0">
+          <h2 className="font-bold">
+            <RandomLengthDots />
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            <RandomLengthDots />
+          </p>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function RandomLengthDots() {
+  return <span>{".".repeat(3 + Math.floor(Math.random() * 20))}</span>;
+}
+
+export function ErrorBoundary() {
+  const error = useRouteError();
+  return (
+    <>
+      <LandingHero />
+      <span className="hidden">{`Unable to load projects: ${error.message}`}</span>
+    </>
   );
 }
