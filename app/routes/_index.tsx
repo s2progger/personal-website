@@ -86,7 +86,6 @@ export default function Index() {
         <Card>
           <CardHeader>
             <CardTitle>Projects</CardTitle>
-            <CardDescription>Open Source Projects from GitHub</CardDescription>
           </CardHeader>
           <CardContent>
             <ul>
