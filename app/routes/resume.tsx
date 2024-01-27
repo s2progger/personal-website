@@ -16,8 +16,8 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "An accomplished hands-on technical leader and full stack developer with a proven track record of architecting high-impact solutions to meet complex business problems.",
-    },
+        "This guy is a software developer, you can tell by his awesome estimation skills.",
+    }
   ];
 };
 
