@@ -51,6 +51,10 @@ export async function loader({ context }) {
                 name
                 description
                 url
+                primaryLanguage {
+                  color
+                  name
+                }
               }
             }
           }
@@ -77,12 +81,24 @@ export default function Index() {
                 {(data) => (
                   <ul>
                     {data.user.pinnedItems.nodes.map((repo) => (
-                      <li key={repo.name} className="mb-5 last:mb-0">
-                        <h2 className="font-bold">
-                          <a href={repo.url} target="_blank" rel="noopener noreferrer">
-                            {repo.name}
-                          </a>
-                        </h2>
+                      <li
+                        key={repo.name}
+                        className="last: last:border-non mb-4 border-b pb-4 last:mb-0 last:border-none last:pb-0"
+                      >
+                        <div className="flex items-baseline justify-between space-x-2">
+                          <h2 className="font-bold">
+                            <a href={repo.url} target="_blank" rel="noopener noreferrer">
+                              {repo.name}
+                            </a>
+                          </h2>
+                          <div>
+                            <span
+                              className="mr-1 inline-block h-3 w-3 rounded-full"
+                              style={{ backgroundColor: repo.primaryLanguage["color"] }}
+                            ></span>
+                            <span className="text-sm">{repo.primaryLanguage["name"]}</span>
+                          </div>
+                        </div>
                         <p className="text-sm text-muted-foreground">{repo.description}</p>
                       </li>
                     ))}
