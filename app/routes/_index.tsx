@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import LandingHero from "~/components/LandingHero";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 
-const PROJECTS_TO_SHOW = 5;
+const PROJECTS_TO_SHOW = 6;
 
 export const meta: MetaFunction = () => {
   return [{ title: "Simon Twogood" }, { name: "description", content: "Let's build things." }];
@@ -27,6 +27,7 @@ interface User {
 interface GraphQLResponse {
   user: User;
 }
+
 interface GitRepoInfo {
   name: string;
   description: string;
