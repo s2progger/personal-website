@@ -1,6 +1,6 @@
 export default function LandingHero() {
   return (
-    <section className="pt-15 flex flex-wrap items-center px-5 md:pt-28 lg:px-20">
+    <section className="pt-8 flex flex-wrap items-center px-5 md:pt-28 lg:px-20">
       <div className="pb-10 md:basis-2/3">
         <h1 className="mb-4 text-2xl md:text-3xl">Hi there! 👋</h1>
         <h2 className="text-3xl font-bold md:text-5xl">
