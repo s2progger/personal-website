@@ -341,7 +341,10 @@ export default function Resume() {
                       Azure
                     </li>
                     <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
-                      Functions
+                      App Service Plan
+                    </li>
+                    <li className="bg-skill text-secondary print:prnt-box m-0.5 px-2 hover:bg-indigo-100">
+                      Serverless
                     </li>
                   </ul>
                 </div>
