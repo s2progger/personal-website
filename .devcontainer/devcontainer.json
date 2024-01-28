@@ -1,5 +1,5 @@
 {
-  "name": "Antrica Front End",
+  "name": "Personal Website - ST",
   "dockerFile": "Dockerfile",
   "workspaceFolder": "/app",
   "customizations": {
