@@ -1,5 +1,5 @@
 {
-  "name": "Personal Website - ST",
+  "name": "Personal Website",
   "dockerFile": "Dockerfile",
   "workspaceFolder": "/app",
   "customizations": {
