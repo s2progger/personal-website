@@ -1,6 +1,6 @@
 export default function LandingHero() {
   return (
-    <section className="pt-8 flex flex-wrap items-center px-5 md:pt-28 lg:px-20">
+    <section className="flex flex-wrap items-center px-5 pt-8 md:pt-28 lg:px-32">
       <div className="pb-10 md:basis-2/3">
         <h1 className="mb-4 text-2xl md:text-3xl">Hi there! 👋</h1>
         <h2 className="text-3xl font-bold md:text-5xl">
@@ -15,7 +15,7 @@ export default function LandingHero() {
         <img
           src="https://avatars.githubusercontent.com/u/496706"
           alt="ST"
-          className="mx-auto h-48 w-48 rounded-full md:mx-0 md:ml-auto"
+          className="mx-auto h-64 w-64 rounded-full md:mx-0 md:ml-auto"
         />
       </div>
     </section>
