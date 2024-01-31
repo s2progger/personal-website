@@ -502,7 +502,7 @@ export default function Resume() {
                 <div className="grid grid-cols-3 items-baseline space-y-2">
                   <div className="text-left text-sm font-semibold text-space-cadet-700">Warp Internet Labs</div>
                   <div className="text-left text-sm">Web Developer</div>
-                  <div className="date-range text-right text-sm text-space-cadet-250">2004 - 2017</div>
+                  <div className="date-range text-right text-sm text-space-cadet-250">2004 - 2007</div>
                 </div>
               </section>
             </div>
