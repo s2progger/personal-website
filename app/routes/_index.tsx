@@ -35,7 +35,7 @@ interface GitRepoInfo {
 }
 
 export async function loader({ context }) {
-  const token = context.env?.GITHUB_PAT ?? process.env.GITHUB_PAT;
+  const token = context.cloudflare.env?.GITHUB_PAT ?? process.env.GITHUB_PAT;
   const graphqlWithAuth = graphql.defaults({
     headers: {
       authorization: `token ${token}`,

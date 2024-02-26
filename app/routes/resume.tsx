@@ -28,9 +28,9 @@ interface LoaderData {
 }
 
 export function loader({ context }): LoaderData {
-  const fullContactKey = context.env?.FULL_CONTACT_KEY ?? process.env.FULL_CONTACT_KEY ?? "";
-  const email = context.env?.RESUME_CONTACT_EMAIL ?? process.env.RESUME_CONTACT_EMAIL ?? "";
-  const phone = context.env?.RESUME_CONTACT_EMAIL ?? process.env.RESUME_CONTACT_PHONE ?? "";
+  const fullContactKey = context.cloudflare.env?.FULL_CONTACT_KEY ?? process.env.FULL_CONTACT_KEY ?? "";
+  const email = context.cloudflare.env?.RESUME_CONTACT_EMAIL ?? process.env.RESUME_CONTACT_EMAIL ?? "";
+  const phone = context.cloudflare.env?.RESUME_CONTACT_EMAIL ?? process.env.RESUME_CONTACT_PHONE ?? "";
 
   return { fullContactKey, email, phone };
 }
