@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Wrangler Server",
+            "name": "Dev Server",
             "type": "node",
             "request": "launch",
             "runtimeExecutable": "npm",

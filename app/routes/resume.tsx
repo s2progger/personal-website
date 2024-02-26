@@ -1,4 +1,4 @@
-import resumeStyles from "~/styles/resume.css";
+import resumeStyles from "~/styles/resume.css?url";
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
   GitHubLogoIcon,
@@ -27,10 +27,10 @@ interface LoaderData {
   phone: string;
 }
 
-export function loader({ context }): LoaderData {
-  const fullContactKey = context.env.FULL_CONTACT_KEY;
-  const email = context.env.RESUME_CONTACT_EMAIL;
-  const phone = context.env.RESUME_CONTACT_PHONE;
+export function loader(): LoaderData {
+  const fullContactKey = process.env.FULL_CONTACT_KEY ?? "";
+  const email = process.env.RESUME_CONTACT_EMAIL ?? "";
+  const phone = process.env.RESUME_CONTACT_PHONE ?? "";
 
   return { fullContactKey, email, phone };
 }
