@@ -1,5 +1,5 @@
 import resumeStyles from "~/styles/resume.css?url";
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type { LinksFunction, LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
@@ -27,12 +27,17 @@ interface LoaderData {
   phone: string;
 }
 
-export function loader({ context }): LoaderData {
-  const fullContactKey = context.cloudflare.env?.FULL_CONTACT_KEY ?? process.env.FULL_CONTACT_KEY ?? "";
-  const email = context.cloudflare.env?.RESUME_CONTACT_EMAIL ?? process.env.RESUME_CONTACT_EMAIL ?? "";
-  const phone = context.cloudflare.env?.RESUME_CONTACT_EMAIL ?? process.env.RESUME_CONTACT_PHONE ?? "";
+interface ResumeEnvironmentVars {
+  FULL_CONTACT_KEY: string;
+  RESUME_CONTACT_EMAIL: string;
+  RESUME_CONTACT_PHONE: string;
+}
 
-  return { fullContactKey, email, phone };
+export function loader({ context }: LoaderFunctionArgs): LoaderData {
+  const { FULL_CONTACT_KEY, RESUME_CONTACT_EMAIL, RESUME_CONTACT_PHONE } = context.cloudflare
+    .env as ResumeEnvironmentVars;
+
+  return { fullContactKey: FULL_CONTACT_KEY, email: RESUME_CONTACT_EMAIL, phone: RESUME_CONTACT_PHONE };
 }
 
 export default function Resume() {

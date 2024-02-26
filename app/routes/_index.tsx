@@ -1,5 +1,5 @@
 import { graphql } from "@octokit/graphql";
-import type { MetaFunction } from "@remix-run/node";
+import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import { Await, useLoaderData, useRouteError } from "@remix-run/react";
 import { defer } from "@remix-run/cloudflare";
 import { Suspense } from "react";
@@ -34,11 +34,15 @@ interface GitRepoInfo {
   url: string;
 }
 
-export async function loader({ context }) {
-  const token = context.cloudflare.env?.GITHUB_PAT ?? process.env.GITHUB_PAT;
+interface IndexEnvironmentVars {
+  GITHUB_PAT: string;
+}
+
+export async function loader({ context }: LoaderFunctionArgs) {
+  const { GITHUB_PAT } = context.cloudflare.env as IndexEnvironmentVars;
   const graphqlWithAuth = graphql.defaults({
     headers: {
-      authorization: `token ${token}`,
+      authorization: `token ${GITHUB_PAT}`,
     },
   });
 
@@ -80,7 +84,7 @@ export default function Index() {
               <Await resolve={data}>
                 {(data) => (
                   <ul>
-                    {data.user.pinnedItems.nodes.map((repo) => (
+                    {data.user.pinnedItems.nodes.map((repo: any) => (
                       <li
                         key={repo.name}
                         className="last: last:border-non mb-4 border-b pb-4 last:mb-0 last:border-none last:pb-0"
