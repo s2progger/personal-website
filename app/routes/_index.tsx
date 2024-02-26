@@ -34,8 +34,8 @@ interface GitRepoInfo {
   url: string;
 }
 
-export async function loader() {
-  const token = process.env.GITHUB_PAT ?? "";
+export async function loader({ context }) {
+  const token = context.env?.GITHUB_PAT ?? process.env.GITHUB_PAT;
   const graphqlWithAuth = graphql.defaults({
     headers: {
       authorization: `token ${token}`,
