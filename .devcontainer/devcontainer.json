@@ -2,12 +2,7 @@
   "name": "Personal Website",
   "dockerFile": "Dockerfile",
   "workspaceFolder": "/app",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "astro-build.astro-vscode"
-      ]
-    }
-  },
-  "forwardPorts": [3001, 8788]
+  "forwardPorts": [
+    7173
+  ]
 }
