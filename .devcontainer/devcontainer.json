@@ -3,7 +3,7 @@
 {
   "name": "Personal Website",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm"
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
@@ -12,8 +12,8 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  // "postCreateCommand": "yarn install",
-
+  "postCreateCommand": "git config --global core.fileMode false && npm install"
+  
   // Configure tool-specific properties.
   // "customizations": {},
 
