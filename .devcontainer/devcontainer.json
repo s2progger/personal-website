@@ -4,5 +4,5 @@
   "postCreateCommand": "install_packages ssh && git config --global core.fileMode false",
   "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
   "workspaceFolder": "/app",
-  "forwardPorts": [7173]
+  "forwardPorts": [5173]
 }
