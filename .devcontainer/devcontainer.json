@@ -1,6 +1,9 @@
 {
   "name": "Personal Website",
-  "dockerFile": "Dockerfile",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
   "workspaceFolder": "/app",
   "forwardPorts": [
     7173
