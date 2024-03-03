@@ -12,10 +12,12 @@ export const meta: MetaFunction = () => {
   return [{ title: "Simon Twogood" }, { name: "description", content: "Let's build things." }];
 };
 
-interface Repository {
-  name: string;
-  description: string;
-  url: string;
+interface IndexEnvironmentVars {
+  GITHUB_PAT: string;
+}
+
+interface GraphQLResponse {
+  user: User;
 }
 
 interface User {
@@ -24,18 +26,18 @@ interface User {
   };
 }
 
-interface GraphQLResponse {
-  user: User;
-}
-
-interface GitRepoInfo {
+interface Repository {
   name: string;
   description: string;
   url: string;
+  primaryLanguage: {
+    color: string;
+    name: string;
+  };
 }
 
-interface IndexEnvironmentVars {
-  GITHUB_PAT: string;
+interface DeferedResult {
+  result: Promise<GraphQLResponse>;
 }
 
 export async function loader({ context }: LoaderFunctionArgs) {
@@ -66,11 +68,12 @@ export async function loader({ context }: LoaderFunctionArgs) {
       }
     `;
 
-  return defer({ data: graphqlWithAuth<GraphQLResponse>(query) });
+  return defer({ result: graphqlWithAuth<GraphQLResponse>(query) });
 }
 
 export default function Index() {
-  const data = useLoaderData<GitRepoInfo[]>().data;
+  const data = useLoaderData() as DeferedResult;
+  const result = data.result;
   return (
     <>
       <LandingHero />
@@ -81,10 +84,10 @@ export default function Index() {
           </CardHeader>
           <CardContent>
             <Suspense fallback={<Loading />}>
-              <Await resolve={data}>
-                {(data) => (
+              <Await resolve={result}>
+                {(result) => (
                   <ul>
-                    {data.user.pinnedItems.nodes.map((repo: any) => (
+                    {result.user.pinnedItems.nodes.map((repo: Repository) => (
                       <li
                         key={repo.name}
                         className="last: last:border-non mb-4 border-b pb-4 last:mb-0 last:border-none last:pb-0"
@@ -139,7 +142,7 @@ function RandomLengthDots() {
 }
 
 export function ErrorBoundary() {
-  const error = useRouteError();
+  const error = useRouteError() as Error;
   return (
     <>
       <LandingHero />
