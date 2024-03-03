@@ -1,11 +1,8 @@
 {
   "name": "Personal Website",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image": "bitnami/node:20",
+  "postCreateCommand": "install_packages ssh && git config --global core.fileMode false",
   "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
   "workspaceFolder": "/app",
-  "forwardPorts": [
-    5173
-  ]
+  "forwardPorts": [7173]
 }
