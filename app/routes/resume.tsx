@@ -354,11 +354,11 @@ export default function Resume() {
                       TypeScript
                     </li>
                     <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">React</li>
-                    <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">AWS</li>
                     <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">GraphQL</li>
                     <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
                       PostgreSQL
                     </li>
+                    <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">AWS</li>
                   </ul>
                 </div>
                 <div>
