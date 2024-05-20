@@ -106,7 +106,7 @@ export default function Resume() {
 
             <section className="mb-4.5 break-inside-avoid">
               <header>
-                <h3 className="text-base font-semibold leading-snug text-space-cadet-600">Hands-on Technical Leader</h3>
+                <h3 className="text-base font-semibold leading-snug text-space-cadet-600">Engineering Manager</h3>
                 <p className="text-sm leading-normal text-space-cadet-250">Since 2018</p>
               </header>
             </section>
@@ -512,7 +512,7 @@ export default function Resume() {
               <section className="mt-8 break-inside-avoid">
                 <div className="grid grid-cols-3 items-baseline space-y-2">
                   <div className="text-left text-sm font-semibold leading-snug text-space-cadet-700">Spyglass</div>
-                  <div className="text-left text-sm">Senior BI Lead</div>
+                  <div className="text-left text-sm">Business Intelligence</div>
                   <div className="date-range text-resume-mono text-right text-sm text-space-cadet-250">2013 - 2018</div>
                 </div>
                 <div className="grid grid-cols-3 items-baseline space-y-2">
