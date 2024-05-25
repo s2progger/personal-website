@@ -12,21 +12,21 @@ export const meta: MetaFunction = () => {
   return [{ title: "Simon Twogood" }, { name: "description", content: "Let's build things." }];
 };
 
-interface IndexEnvironmentVars {
+type IndexEnvironmentVars = {
   GITHUB_PAT: string;
-}
+};
 
-interface GraphQLResponse {
+type GraphQLResponse = {
   user: User;
-}
+};
 
-interface User {
+type User = {
   pinnedItems: {
     nodes: Repository[];
   };
-}
+};
 
-interface Repository {
+type Repository = {
   name: string;
   description: string;
   url: string;
@@ -34,11 +34,11 @@ interface Repository {
     color: string;
     name: string;
   };
-}
+};
 
-interface DeferedResult {
+type DeferredResult = {
   result: Promise<GraphQLResponse>;
-}
+};
 
 export async function loader({ context }: LoaderFunctionArgs) {
   const { GITHUB_PAT } = context.cloudflare.env as IndexEnvironmentVars;
@@ -72,7 +72,7 @@ export async function loader({ context }: LoaderFunctionArgs) {
 }
 
 export default function Index() {
-  const data = useLoaderData() as DeferedResult;
+  const data = useLoaderData() as DeferredResult;
   const result = data.result;
   return (
     <>
