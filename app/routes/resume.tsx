@@ -99,7 +99,7 @@ export default function Resume() {
                   <h3 className="text-base font-semibold leading-snug text-space-cadet-600">
                     Full Stack Software Developer
                   </h3>
-                  <p className="text-sm leading-normal text-space-cadet-250 ">Since 2004</p>
+                  <p className="text-sm leading-normal text-space-cadet-250">Since 2004</p>
                 </header>
               </section>
             </div>
@@ -279,7 +279,7 @@ export default function Resume() {
                 <p className="text-sm leading-normal text-space-cadet-650">
                   Microsoft Certified Azure Data Engineer Associate
                 </p>
-                <p className="text-sm leading-normal  text-space-cadet-650">FrontLine Leadership 2.0 (neuroSHIFT)</p>
+                <p className="text-sm leading-normal text-space-cadet-650">FrontLine Leadership 2.0 (neuroSHIFT)</p>
               </header>
             </section>
           </section>
@@ -363,12 +363,12 @@ export default function Resume() {
                 </div>
                 <div>
                   <h4 className="mt-3 text-sm2 font-semibold leading-normal text-space-cadet-650">
-                    Software Engineer III (Contract)
+                    Senior Software Engineer III (Contract)
                   </h4>
                   <ul className="text-sm">
                     <li>
-                      Supporting Facebook&apos;s fibre optice network infastructure as contributing member of the
-                      Glassworks Project.
+                      Building Facebook&apos;s global fiber optic network infrastructure management software in a team
+                      of full stack software engineers.
                     </li>
                   </ul>
                 </div>
