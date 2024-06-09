@@ -1,12 +1,11 @@
 import { type PlatformProxy } from "wrangler";
 
-// When using `wrangler.toml` to configure bindings,
-// `wrangler types` will generate types for those bindings
-// into the global `Env` interface.
-// Need this empty interface so that typechecking passes
-// even if no `wrangler.toml` exists.
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface Env {}
+interface Env {
+  GITHUB_PAT: string;
+  FULL_CONTACT_KEY: string;
+  RESUME_CONTACT_EMAIL: string;
+  RESUME_CONTACT_PHONE: string;
+}
 
 type Cloudflare = Omit<PlatformProxy<Env>, "dispose">;
 

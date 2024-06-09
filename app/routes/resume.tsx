@@ -21,21 +21,14 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-interface LoaderData {
+type LoaderData = {
   fullContactKey: string;
   email: string;
   phone: string;
-}
-
-interface ResumeEnvironmentVars {
-  FULL_CONTACT_KEY: string;
-  RESUME_CONTACT_EMAIL: string;
-  RESUME_CONTACT_PHONE: string;
-}
+};
 
 export function loader({ context }: LoaderFunctionArgs): LoaderData {
-  const { FULL_CONTACT_KEY, RESUME_CONTACT_EMAIL, RESUME_CONTACT_PHONE } = context.cloudflare
-    .env as ResumeEnvironmentVars;
+  const { FULL_CONTACT_KEY, RESUME_CONTACT_EMAIL, RESUME_CONTACT_PHONE } = context.cloudflare.env;
 
   return { fullContactKey: FULL_CONTACT_KEY, email: RESUME_CONTACT_EMAIL, phone: RESUME_CONTACT_PHONE };
 }

@@ -36,10 +36,6 @@ type Repository = {
   };
 };
 
-type DeferredResult = {
-  result: Promise<GraphQLResponse>;
-};
-
 export async function loader({ context }: LoaderFunctionArgs) {
   const { GITHUB_PAT } = context.cloudflare.env as IndexEnvironmentVars;
   const graphqlWithAuth = graphql.defaults({
@@ -72,8 +68,7 @@ export async function loader({ context }: LoaderFunctionArgs) {
 }
 
 export default function Index() {
-  const data = useLoaderData() as DeferredResult;
-  const result = data.result;
+  const data = useLoaderData<Promise<GraphQLResponse>>();
   return (
     <>
       <LandingHero />
@@ -84,10 +79,10 @@ export default function Index() {
           </CardHeader>
           <CardContent>
             <Suspense fallback={<Loading />}>
-              <Await resolve={result}>
-                {(result) => (
+              <Await resolve={data}>
+                {(data) => (
                   <ul>
-                    {result.user.pinnedItems.nodes.map((repo: Repository) => (
+                    {data.user.pinnedItems.nodes.map((repo: Repository) => (
                       <li
                         key={repo.name}
                         className="last: last:border-non mb-4 border-b pb-4 last:mb-0 last:border-none last:pb-0"

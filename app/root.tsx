@@ -1,14 +1,9 @@
 import { LinksFunction } from "@remix-run/cloudflare";
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import tailwind from "~/styles/tailwind.css?url";
 import fonts from "~/styles/fonts.css?url";
 import TopNav from "~/components/TopNav";
+import React from "react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwind },
