@@ -64,7 +64,7 @@ export async function loader({ context }: LoaderFunctionArgs) {
 }
 
 export default function Index() {
-  const data = useLoaderData<Promise<GraphQLResponse>>();
+  const data = useLoaderData<typeof loader>();
   return (
     <>
       <LandingHero />
@@ -75,7 +75,7 @@ export default function Index() {
           </CardHeader>
           <CardContent>
             <Suspense fallback={<Loading />}>
-              <Await resolve={data}>
+              <Await resolve={data.result}>
                 {(data) => (
                   <ul>
                     {data.user.pinnedItems.nodes.map((repo: Repository) => (
