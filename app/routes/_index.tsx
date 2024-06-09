@@ -12,10 +12,6 @@ export const meta: MetaFunction = () => {
   return [{ title: "Simon Twogood" }, { name: "description", content: "Let's build things." }];
 };
 
-type IndexEnvironmentVars = {
-  GITHUB_PAT: string;
-};
-
 type GraphQLResponse = {
   user: User;
 };
@@ -37,7 +33,7 @@ type Repository = {
 };
 
 export async function loader({ context }: LoaderFunctionArgs) {
-  const { GITHUB_PAT } = context.cloudflare.env as IndexEnvironmentVars;
+  const { GITHUB_PAT } = context.cloudflare.env;
   const graphqlWithAuth = graphql.defaults({
     headers: {
       authorization: `token ${GITHUB_PAT}`,
