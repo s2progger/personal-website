@@ -21,13 +21,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-type LoaderData = {
-  fullContactKey: string;
-  email: string;
-  phone: string;
-};
-
-export function loader({ context }: LoaderFunctionArgs): LoaderData {
+export function loader({ context }: LoaderFunctionArgs) {
   const { FULL_CONTACT_KEY, RESUME_CONTACT_EMAIL, RESUME_CONTACT_PHONE } = context.cloudflare.env;
 
   return { fullContactKey: FULL_CONTACT_KEY, email: RESUME_CONTACT_EMAIL, phone: RESUME_CONTACT_PHONE };
@@ -37,7 +31,7 @@ export default function Resume() {
   // You can display the full contact info by passing a 'key' in the query string
   // This is to prevent bots from scraping my contact info. The key and contact info is
   // stored in environment variables so that it doesn't get checked into source control.
-  const { fullContactKey, email, phone } = useLoaderData<LoaderData>();
+  const { fullContactKey, email, phone } = useLoaderData<typeof loader>();
   const location = useLocation();
   const search = new URLSearchParams(location.search);
 
