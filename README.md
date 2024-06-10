@@ -1,16 +1,19 @@
-# Welcome to Remix + Vite!
+# Personal Portfolio
+
+This is my personal portfolio website built using Remix, Vite, and Cloudflare Workers.
+
+## Remix + Vite + Cloudflare
 
 📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
 
-## Typegen
+## Environment Variables
 
-Generate types for your Cloudflare bindings in `wrangler.toml`:
+A wrangler.sample.toml file is provided in the root of the project to demonstrate how to set or add local development 
+environment variables. You will need to create a file named `wrangler.toml` from this sample file, and set the 
+environment variables in it.
 
-```sh
-npm run typegen
-```
-
-You will need to rerun typegen whenever you make changes to `wrangler.toml`.
+If you are adding a new environment variable, you will also need to add it to `Env` interface in `load-context.ts` so 
+that TypeScript knows about it.
 
 ## Development
 
@@ -29,20 +32,14 @@ npm run start
 
 ## Deployment
 
-> [!WARNING]  
-> Cloudflare does _not_ use `wrangler.toml` to configure deployment bindings.
-> You **MUST** [configure deployment bindings manually in the Cloudflare dashboard][bindings].
+Cloudflare has been connected to the repository and any push to the `main` branch will trigger a deployment. To see a 
+preview of a change, you can push to a branch that stats with `feature/` and Cloudflare will create a preview site
+and URL for it.
 
-First, build your app for production:
+## Node Version
 
-```sh
-npm run build
-```
+To change the Node version, updates must be made in the following places:
 
-Then, deploy your app to Cloudflare Pages:
-
-```sh
-npm run deploy
-```
-
-[bindings]: https://developers.cloudflare.com/pages/functions/bindings/
+- The docker image in `.devcontainer/devcontainer.json`
+- `package.json` under `engines.node` and `volta` (if using Volta)
+- In Cloudflare Workers, the Node version is set in the `NODE_VERSION` environment variable
