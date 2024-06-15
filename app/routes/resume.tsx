@@ -330,7 +330,7 @@ export default function Resume() {
               <section className="break-inside-avoid">
                 <header>
                   <div className="mb-2 flex justify-between align-baseline">
-                    <h3 className="font-semibold leading-snug text-space-cadet-650">MethodDev @ Meta</h3>
+                    <h3 className="font-semibold leading-snug text-space-cadet-650">Meta</h3>
                     <span className="date-range text-sm text-space-cadet-250">March 2024 - Present</span>
                   </div>
                 </header>
