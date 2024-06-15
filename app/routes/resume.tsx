@@ -499,7 +499,7 @@ export default function Resume() {
               <section className="mt-8 break-inside-avoid">
                 <div className="grid grid-cols-3 items-baseline space-y-2">
                   <div className="text-left text-sm font-semibold leading-snug text-space-cadet-700">Spyglass</div>
-                  <div className="text-left text-sm">Business Intelligence</div>
+                  <div className="text-left text-sm">Analytic Insights Lead</div>
                   <div className="date-range text-resume-mono text-right text-sm text-space-cadet-250">2013 - 2018</div>
                 </div>
                 <div className="grid grid-cols-3 items-baseline space-y-2">
