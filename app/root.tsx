@@ -24,6 +24,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <meta name="theme-color" content="#030822	" />
       </head>
       <body className="dark mx-auto max-w-screen-xl p-4">
         <TopNav />
