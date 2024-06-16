@@ -346,11 +346,12 @@ export default function Resume() {
                       PostgreSQL
                     </li>
                     <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">AWS</li>
+                    <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">GIS</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="mt-3 text-sm2 font-semibold leading-normal text-space-cadet-650">
-                    Senior Software Engineer III (Contract)
+                    Senior Software Engineer (Contract)
                   </h4>
                   <ul className="text-sm">
                     <li>
@@ -390,9 +391,9 @@ export default function Resume() {
                   </h4>
                   <ul className="text-sm">
                     <li>
-                      Enhanced product deployment reliability through the implementation of automated CI/CD pipelines in
-                      Microsoft Azure, and transitioned the team to Trunk Based Development, increasing deployment
-                      frequency from monthly to daily.
+                      Enhanced e-commerce product deployment reliability through the implementation of automated CI/CD
+                      pipelines in Microsoft Azure while transitioning the team to Trunk Based Development, increasing
+                      deployment frequency from monthly to daily.
                     </li>
                   </ul>
                 </div>
@@ -433,7 +434,7 @@ export default function Resume() {
 
                   <ul className="text-sm">
                     <li className="leading-normal">
-                      Successfully led a cross-functional engineering department to adopt product lead development
+                      Successfully led a cross-functional engineering department to adopt Product Led Development
                       methodologies, achieving a 600% growth in subscription revenue and a 50% reduction in processing
                       fees through strategic partnership and infrastructure enhancements.
                     </li>
@@ -490,7 +491,7 @@ export default function Resume() {
                     <li className="leading-normal">
                       Spearheaded digital transformation initiatives including the development of revenue-generating web
                       properties and the architectural design of Calgary&apos;s Advanced Metering Infrastructure.
-                      Championed cloud solutions, including an 50TB Azure data warehousing strategy.
+                      Championed cloud solutions, including a 50TB Azure data warehousing strategy.
                     </li>
                   </ul>
                 </div>
