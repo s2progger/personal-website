@@ -76,8 +76,9 @@ export default function Resume() {
 
               <section className="mb-4.5 break-inside-avoid">
                 <p>
-                  An accomplished hands-on technical leader and full stack developer with a proven track record of
-                  architecting high-impact solutions to meet complex business problems.
+                  Strategic technologist with a passion for building high-performing engineering teams and cutting-edge
+                  solutions that disrupt markets. Extensive experience in full-stack development, cloud infrastructure,
+                  data engineering, and product-led growth strategies.
                 </p>
               </section>
 
@@ -106,97 +107,94 @@ export default function Resume() {
               </header>
               <div className="my-3.2 last:pb-1.5">
                 <ul className="text-md -mb-1.6 -mr-1.6 flex flex-wrap leading-relaxed">
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
-                    Node JS
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                    Node
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     TypeScript
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     JavaScript
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Rust
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Java
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Kotlin
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     C#
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Python
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     PHP
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Ruby
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Rails
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     SQL
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     NoSQL
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     React
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Vue
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Angular
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     AWS Lambda
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Serverless
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     PostgreSQL
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     MySQL
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Azure SQL
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     GraphQL
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     AWS
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Docker
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     CI/CD
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Azure
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Databricks
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
-                    Event Driven Architecture
-                  </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Scrum
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Kanban
                   </li>
-                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-base text-secondary hover:bg-indigo-100">
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Product Management
                   </li>
                 </ul>
