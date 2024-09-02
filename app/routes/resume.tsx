@@ -400,7 +400,7 @@ export default function Resume() {
               <section className="mt-8 break-inside-avoid">
                 <header>
                   <div className="mb-2 flex justify-between align-baseline">
-                    <h3 className="font-semibold leading-snug text-space-cadet-700">Bolster (YCombinator S21)</h3>
+                    <h3 className="font-semibold leading-snug text-space-cadet-700">CostCertified (YCombinator S21)</h3>
                     <span className="date-range text-sm text-space-cadet-250">Oct 2021 - June 2023</span>
                   </div>
                 </header>
@@ -445,9 +445,8 @@ export default function Resume() {
 
                   <ul className="text-sm">
                     <li className="leading-normal">
-                      Transformed construction project estimation as a Full Stack Developer by creating an interactive,
-                      shoppable platform, leading the full software development lifecycle, and architecting a
-                      multi-merchant payment platform that achieved $5 million in annualized payments.
+                      Transformed construction project estimation as a Full Stack Developer, creating a shoppable cost
+                      estimation and multi-merchant payment platform that achieved $5 million in annualized payments.
                     </li>
                   </ul>
                 </div>
