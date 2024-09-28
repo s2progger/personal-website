@@ -353,8 +353,9 @@ export default function Resume() {
                   </h4>
                   <ul className="text-sm">
                     <li>
-                      Building Facebook&apos;s global fiber optic network infrastructure management software in a team
-                      of full stack software engineers.
+                      Builing Meta&apos;s global fiber optic network infrastructure management system, engineering
+                      high-performance full-stack solutions using GraphQL service federation and complex GIS
+                      functionality.
                     </li>
                   </ul>
                 </div>
