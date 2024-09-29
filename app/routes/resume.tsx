@@ -71,14 +71,14 @@ export default function Resume() {
             {/* To keep in the same column */}
             <div className="break-inside-avoid">
               <h2 className="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
-                Summary
+                Executive Summary
               </h2>
 
               <section className="mb-4.5 break-inside-avoid">
                 <p>
-                  Strategic technologist with a passion for disrupting industries with high-performing engineering teams
-                  and game-changing solutions. Extensive experience in full stack development, cloud infrastructure,
-                  data engineering, and product-led growth strategies.
+                  Strategic software engineering leader with over 20 years of experience driving innovation across
+                  diverse industries. Extensive experience in full stack development, cloud infrastructure, data
+                  engineering, business analytics, and product-led growth strategies.
                 </p>
               </section>
 
@@ -190,6 +190,12 @@ export default function Resume() {
                   </li>
                   <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Snowflake
+                  </li>
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                    Gen AI
+                  </li>
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                    LLM
                   </li>
                   <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Scrum
@@ -351,7 +357,7 @@ export default function Resume() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="mt-3 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  <h4 className="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
                     Senior Software Engineer (Contract)
                   </h4>
                   <ul className="text-sm">
@@ -364,7 +370,7 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-8 break-inside-avoid">
+              <section className="mt-10 break-inside-avoid">
                 <header>
                   <div className="mb-2 flex justify-between align-baseline">
                     <h3 className="font-semibold leading-snug text-space-cadet-650">Cymax Technology Group</h3>
@@ -379,16 +385,14 @@ export default function Resume() {
                     </li>
                     <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">React</li>
                     <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Azure</li>
-                    <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                      App Service Plan
-                    </li>
+                    <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Gen AI</li>
                     <li className="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
                       Serverless
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="mt-3 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  <h4 className="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
                     Engineering Manager
                   </h4>
                   <ul className="text-sm">
@@ -401,7 +405,7 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-8 break-inside-avoid">
+              <section className="mt-10 break-inside-avoid">
                 <header>
                   <div className="mb-2 flex justify-between align-baseline">
                     <h3 className="font-semibold leading-snug text-space-cadet-700">CostCertified (YCombinator S21)</h3>
@@ -430,7 +434,7 @@ export default function Resume() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="mt-3 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  <h4 className="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
                     Director, Product Development
                   </h4>
 
@@ -456,7 +460,7 @@ export default function Resume() {
                 </div>
               </section>
 
-              <section className="mt-8 break-inside-avoid">
+              <section className="mt-10 break-inside-avoid">
                 <header>
                   <div className="mb-2 flex justify-between align-baseline">
                     <h3 className="font-semibold leading-snug text-space-cadet-700">ENMAX Corporation</h3>
@@ -484,7 +488,7 @@ export default function Resume() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="mt-3 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  <h4 className="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
                     Manager, Enterprise Data & Digital Innovations
                   </h4>
 
