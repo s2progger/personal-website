@@ -353,8 +353,8 @@ export default function Resume() {
                   </h4>
                   <ul className="text-sm">
                     <li>
-                      Builing Meta&apos;s global fiber optic network infrastructure management system, engineering
-                      high-performance full-stack solutions using GraphQL service federation and complex GIS
+                      Building Meta&apos;s global fiber optic network infrastructure management system. Engineering
+                      high-performance full stack solutions using GraphQL service federation and complex GIS
                       functionality.
                     </li>
                   </ul>
