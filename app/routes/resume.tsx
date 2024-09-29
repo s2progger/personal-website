@@ -189,6 +189,9 @@ export default function Resume() {
                     Databricks
                   </li>
                   <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                    Snowflake
+                  </li>
+                  <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
                     Scrum
                   </li>
                   <li className="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
