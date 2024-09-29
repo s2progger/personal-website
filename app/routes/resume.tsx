@@ -76,8 +76,8 @@ export default function Resume() {
 
               <section className="mb-4.5 break-inside-avoid">
                 <p>
-                  Strategic technologist with a passion for building high-performing engineering teams and cutting-edge
-                  solutions that disrupt markets. Extensive experience in full-stack development, cloud infrastructure,
+                  Strategic technologist with a passion for disrupting industries with high-performing engineering teams
+                  and game-changing solutions. Extensive experience in full stack development, cloud infrastructure,
                   data engineering, and product-led growth strategies.
                 </p>
               </section>
