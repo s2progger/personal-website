@@ -60,7 +60,7 @@ export async function loader({ context }: LoaderFunctionArgs) {
       }
     `;
 
-  return defer({ result: graphqlWithAuth<GraphQLResponse>(query) });
+  return { result: graphqlWithAuth<GraphQLResponse>(query) };
 }
 
 export default function Index() {
