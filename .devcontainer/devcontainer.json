@@ -9,7 +9,8 @@
     "vscode": {
       "extensions": [
         "esbenp.prettier-vscode",
-        "pflannery.vscode-versionlens"
+        "pflannery.vscode-versionlens",
+        "tamasfe.even-better-toml"
       ]
     }
   } 
