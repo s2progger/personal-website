@@ -5,6 +5,12 @@
   "customizations" : {
     "jetbrains" : {
       "backend" : "WebStorm"
+    },
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "pflannery.vscode-versionlens"
+      ]
     }
   } 
 }
