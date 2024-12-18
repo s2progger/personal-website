@@ -1,7 +1,6 @@
-node_modules
+.DS_Store
+/node_modules/
 
-/.cache
-/build
-wrangler.toml
-
-.wrangler
+# React Router
+/.react-router/
+/build/

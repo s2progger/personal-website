@@ -1,45 +1,71 @@
-# Personal Portfolio
+# Welcome to React Router!
 
-This is my personal portfolio website built using Remix, Vite, and Cloudflare Workers.
+A modern, production-ready template for building full-stack React applications using React Router.
 
-## Remix + Vite + Cloudflare
+## Features
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
+- 🚀 Server-side rendering
+- ⚡️ Hot Module Replacement (HMR)
+- 📦 Asset bundling and optimization
+- 🔄 Data loading and mutations
+- 🔒 TypeScript by default
+- 🎉 TailwindCSS for styling
+- 📖 [React Router docs](https://reactrouter.com/)
 
-## Environment Variables
+## Getting Started
 
-A wrangler.sample.toml file is provided in the root of the project to demonstrate how to set or add local development 
-environment variables. You will need to create a file named `wrangler.toml` from this sample file, and set the 
-environment variables in it.
+### Installation
 
-If you are adding a new environment variable, you will also need to add it to `Env` interface in `load-context.ts` so 
-that TypeScript knows about it.
+Install the dependencies:
 
-## Development
+```bash
+npm install
+```
 
-Run the Vite dev server:
+### Development
 
-```sh
+Start the development server with HMR:
+
+```bash
 npm run dev
 ```
 
-To run Wrangler:
+Your application will be available at `http://localhost:5173`.
 
-```sh
+## Building for Production
+
+Create a production build:
+
+```bash
 npm run build
-npm run start
 ```
 
 ## Deployment
 
-Cloudflare has been connected to the repository and any push to the `main` branch will trigger a deployment. To see a 
-preview of a change, you can push to a branch that stats with `feature/` and Cloudflare will create a preview site
-and URL for it.
+Deployment is done using the Wrangler CLI.
 
-## Node Version
+To deploy directly to production:
 
-To change the Node version, updates must be made in the following places:
+```sh
+npx wrangler deploy
+```
 
-- The docker image in `.devcontainer/devcontainer.json`
-- `package.json` under `engines.node` and `volta` (if using Volta)
-- In Cloudflare Workers, the Node version is set in the `NODE_VERSION` environment variable
+To deploy a preview URL:
+
+```sh
+npx wrangler versions upload
+```
+
+You can then promote a version to production after verification or roll it out progressively.
+
+```sh
+npx wrangler versions deploy
+```
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+
+---
+
+Built with ❤️ using React Router.
