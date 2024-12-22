@@ -5,7 +5,9 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <main class="resume print:bg-paper mt-5 hyphens-manual text-space-cadet print:m-0 print:py-5">
     {/* Page */}
-    <div class="page mx-auto max-w-2xl rounded-lg bg-primary p-10 md:h-letter md:max-w-letter lg:p-16 print:max-w-letter print:bg-white print:p-5">
+    <div
+      class="page mx-auto max-w-2xl rounded-lg bg-primary p-10 md:h-letter md:max-w-letter lg:p-16 print:max-w-letter print:bg-white print:p-5"
+    >
       <header class="mb-8 flex items-center align-middle md:mb-11">
         <div class="initials-container mr-3 bg-space-cadet-250 font-bold leading-none text-primary print:hidden">
           <div class="initial text-center">S</div>
@@ -20,8 +22,10 @@ import Layout from "../layouts/Layout.astro";
         >
           <symbol id="ai:ph:wave-triangle-duotone">
             <g fill="currentColor">
-              <path d="m76 56l52 72H24Zm156 72H128l52 72Z" opacity=".2" />
-              <path d="m238.48 132.68l-52 72a8 8 0 0 1-13 0L76 69.66l-45.51 63a8 8 0 1 1-13-9.36l52-72a8 8 0 0 1 13 0l97.51 135l45.51-63a8 8 0 1 1 13 9.36Z" />
+              <path d="m76 56l52 72H24Zm156 72H128l52 72Z" opacity=".2"></path>
+              <path
+                d="m238.48 132.68l-52 72a8 8 0 0 1-13 0L76 69.66l-45.51 63a8 8 0 1 1-13-9.36l52-72a8 8 0 0 1 13 0l97.51 135l45.51-63a8 8 0 1 1 13 9.36Z"
+              ></path>
             </g>
           </symbol>
           <use xlink:href="#ai:ph:wave-triangle-duotone"></use>
@@ -41,17 +45,15 @@ import Layout from "../layouts/Layout.astro";
 
             <section class="mb-4.5 break-inside-avoid">
               <p>
-                Strategic software engineering leader with over 20 years of experience driving innovation across
-                diverse industries. Extensive experience in full stack development, cloud infrastructure, data
-                engineering, business analytics, and product-led growth strategies.
+                Strategic software engineering leader with over 20 years of experience driving innovation across diverse
+                industries. Extensive experience in full stack development, cloud infrastructure, data engineering,
+                business analytics, and product-led growth strategies.
               </p>
             </section>
 
             <section class="mb-4.5 break-inside-avoid">
               <header>
-                <h3 class="text-base font-semibold leading-snug text-space-cadet-600">
-                  Full Stack Software Developer
-                </h3>
+                <h3 class="text-base font-semibold leading-snug text-space-cadet-600">Full Stack Software Developer</h3>
                 <p class="text-sm leading-normal text-space-cadet-250">Since 2004</p>
               </header>
             </section>
@@ -179,9 +181,7 @@ import Layout from "../layouts/Layout.astro";
         <section class="mt-8 first:mt-0">
           {/* To keep in the same column */}
           <div class="break-inside-avoid">
-            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
-              Projects
-            </h2>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">Projects</h2>
 
             <section class="mb-4.5 break-inside-avoid">
               <header>
@@ -210,8 +210,8 @@ import Layout from "../layouts/Layout.astro";
               </h3>
             </header>
             <p class="mt-2.1 text-sm leading-normal">
-              A React.js and JVM based liability management tool to help Canadian oil and gas companies track their
-              LMR ratings and forecast future ratios.
+              A React.js and JVM based liability management tool to help Canadian oil and gas companies track their LMR
+              ratings and forecast future ratios.
             </p>
           </section>
         </section>
@@ -219,9 +219,7 @@ import Layout from "../layouts/Layout.astro";
         <section class="mt-8 first:mt-0">
           {/* To keep in the same column */}
           <div class="break-inside-avoid">
-            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
-              Education
-            </h2>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">Education</h2>
 
             <section class="mb-4.5 break-inside-avoid">
               <header>
@@ -244,27 +242,37 @@ import Layout from "../layouts/Layout.astro";
         <section class="mt-8 first:mt-0">
           {/* To keep in the same column */}
           <div class="break-inside-avoid">
-            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
-              Contact
-            </h2>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">Contact</h2>
 
             <section class="mb-4 break-inside-avoid">
               <ul class="list-inside">
                 <li class="flex text-sm leading-normal text-space-cadet-700">
                   <span>Calgary, Alberta</span>
                 </li>
-                <li class="mt-4 flex items-center align-baseline text-sm leading-normal text-space-cadet-700 md:text-base">
+                <li class="mt-4 text-sm leading-normal text-space-cadet-700 md:text-base">
                   <a
                     href="https://linkedin.com/in/simon-twogood"
-                    class="text-sm hover:text-fuchsia-900 hover:underline"
+                    class="flex items-center space-x-2 align-baseline text-sm hover:text-fuchsia-900 hover:underline"
                   >
-                    https://linkedin.com/in/simon-twogood
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                      <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                      ></path>
+                    </svg>
+                    <span>https://linkedin.com/in/simon-twogood</span>
                   </a>
                 </li>
-                <li class="mt-2 flex items-center text-sm leading-normal text-space-cadet-700 md:text-base">
-
-                  <a href="https://github.com/s2progger" class="text-sm hover:text-fuchsia-900 hover:underline">
-                    https://github.com/s2progger
+                <li class="mt-2 leading-normal text-space-cadet-700 md:text-base">
+                  <a
+                    href="https://github.com/s2progger"
+                    class="flex items-center space-x-2 align-baseline text-sm hover:text-fuchsia-900 hover:underline"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      ></path>
+                    </svg>
+                    <span>https://github.com/s2progger</span>
                   </a>
                 </li>
               </ul>
@@ -275,9 +283,7 @@ import Layout from "../layouts/Layout.astro";
         <section class="mt-8 first:mt-0">
           {/* To keep in the same column */}
           <div class="break-inside-avoid">
-            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
-              Job History
-            </h2>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">Job History</h2>
 
             <section class="break-inside-avoid">
               <header>
@@ -289,14 +295,10 @@ import Layout from "../layouts/Layout.astro";
               <div>
                 <ul class="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Rust</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    TypeScript
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">TypeScript</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">React</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">GraphQL</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    PostgreSQL
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">PostgreSQL</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">AWS</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">GIS</li>
                 </ul>
@@ -325,21 +327,15 @@ import Layout from "../layouts/Layout.astro";
               <div>
                 <ul class="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">C#</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    TypeScript
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">TypeScript</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">React</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Azure</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Gen AI</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    Serverless
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Serverless</li>
                 </ul>
               </div>
               <div>
-                <h4 class="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
-                  Engineering Manager
-                </h4>
+                <h4 class="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">Engineering Manager</h4>
                 <ul class="text-sm">
                   <li>
                     Enhanced e-commerce product deployment reliability through the implementation of automated CI/CD
@@ -362,16 +358,12 @@ import Layout from "../layouts/Layout.astro";
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">SaaS</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Node</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Vue</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    JavaScript
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">JavaScript</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">PHP</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Docker</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">GraphQL</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">AWS</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    OpenSearch
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">OpenSearch</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">RDS</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">SQS</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Lambda</li>
@@ -415,19 +407,13 @@ import Layout from "../layouts/Layout.astro";
               <div>
                 <ul class="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Azure</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    Databricks
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Databricks</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Data Lake</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Streaming</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    Serverless
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Serverless</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Azure SQL</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">React</li>
-                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
-                    JavaScript
-                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">JavaScript</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Python</li>
                   <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">C#</li>
                 </ul>
@@ -481,47 +467,51 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-    @screen print {
-        @page {
-            margin: 0;
-        }
+  @screen print {
+    @page {
+      margin: 0;
+    }
 
-        body {
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
-            color: black !important;
-        }
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color: black !important;
+    }
 
-        h1, h2, h3, p, li {
-            color: black !important;
-        }
-
-        html {
-            font-size: 12.288px !important;
-        }
+    h1,
+    h2,
+    h3,
+    p,
+    li {
+      color: black !important;
     }
 
     html {
-        font-size: 13.176471px;
+      font-size: 12.288px !important;
     }
+  }
 
-    /* For Letter size */
+  html {
+    font-size: 13.176471px;
+  }
 
-    @screen sm {
-        html {
-            font-size: calc( 13.176471px + (16 - 13.176471) * (100vw - 640px) / (833 - 640) );
-        }
+  /* For Letter size */
+
+  @screen sm {
+    html {
+      font-size: calc(13.176471px + (16 - 13.176471) * (100vw - 640px) / (833 - 640));
     }
+  }
 
-    @screen md {
-        html {
-            font-size: calc( 12.288px + (16 - 12.288) * (100vw - 833px) / (1079.5 - 833) );
-        }
+  @screen md {
+    html {
+      font-size: calc(12.288px + (16 - 12.288) * (100vw - 833px) / (1079.5 - 833));
     }
+  }
 
-    /* For A4 size */
+  /* For A4 size */
 
-    /* @screen sm {
+  /* @screen sm {
       html {
         font-size: calc( 13.176471px + (16 - 13.176471) * (100vw - 640px) / (811 - 640) );
       }
@@ -533,30 +523,30 @@ import Layout from "../layouts/Layout.astro";
       }
     } */
 
-    @screen lg {
-        html {
-            font-size: 16px;
-        }
+  @screen lg {
+    html {
+      font-size: 16px;
     }
+  }
 
-    body .icon-parent::before {
-        content: "A";
-        width: 0;
-        visibility: hidden;
-        display: inline-block;
-    }
+  body .icon-parent::before {
+    content: "A";
+    width: 0;
+    visibility: hidden;
+    display: inline-block;
+  }
 
-    body .initials-container {
-        min-width: 2.31rem;
-        padding-bottom: 0.6875rem;
-        padding-top: 0.6875rem;
-    }
+  body .initials-container {
+    min-width: 2.31rem;
+    padding-bottom: 0.6875rem;
+    padding-top: 0.6875rem;
+  }
 
-    body .resume {
-        font-family: "Fira Sans", sans-serif;
-    }
+  body .resume {
+    font-family: "Fira Sans", sans-serif;
+  }
 
-    body .date-range {
-        font-family: "Fira Mono", monospace;
-    }
+  body .date-range {
+    font-family: "Fira Mono", monospace;
+  }
 </style>
