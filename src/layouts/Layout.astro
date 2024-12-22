@@ -1,0 +1,53 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Simon Twogood</title>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Let's build things">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	@font-face {
+		font-family: "Fira Sans";
+		src: url("/fonts/FiraSans-Regular.woff2") format("woff2");
+		font-weight: normal;
+		font-style: normal;
+		font-display: fallback;
+	}
+
+	@font-face {
+		font-family: "Fira Sans";
+		src: url("/fonts/FiraSans-SemiBold.woff2") format("woff2");
+		font-weight: 600;
+		font-style: normal;
+		font-display: fallback;
+	}
+
+	@font-face {
+		font-family: "Fira Sans";
+		src: url("/fonts/FiraSans-Bold.woff2") format("woff2");
+		font-weight: bold;
+		font-style: normal;
+		font-display: fallback;
+	}
+
+	@font-face {
+		font-family: "Fira Mono";
+		src: url("/fonts/FiraMono-Regular.woff2") format("woff2");
+		font-weight: normal;
+		font-style: normal;
+		font-display: fallback;
+	}
+</style>

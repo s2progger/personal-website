@@ -1,0 +1,562 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="resume print:bg-paper mt-5 hyphens-manual text-space-cadet print:m-0 print:py-5">
+    {/* Page */}
+    <div class="page mx-auto max-w-2xl rounded-lg bg-primary p-10 md:h-letter md:max-w-letter lg:p-16 print:max-w-letter print:bg-white print:p-5">
+      <header class="mb-8 flex items-center align-middle md:mb-11">
+        <div class="initials-container mr-3 bg-space-cadet-250 font-bold leading-none text-primary print:hidden">
+          <div class="initial text-center">S</div>
+          <div class="initial text-center">2</div>
+        </div>
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 256 256"
+          class="mr-2 hidden size-8 print:block"
+          data-icon="ph:wave-triangle-duotone"
+        >
+          <symbol id="ai:ph:wave-triangle-duotone">
+            <g fill="currentColor">
+              <path d="m76 56l52 72H24Zm156 72H128l52 72Z" opacity=".2" />
+              <path d="m238.48 132.68l-52 72a8 8 0 0 1-13 0L76 69.66l-45.51 63a8 8 0 1 1-13-9.36l52-72a8 8 0 0 1 13 0l97.51 135l45.51-63a8 8 0 1 1 13 9.36Z" />
+            </g>
+          </symbol>
+          <use xlink:href="#ai:ph:wave-triangle-duotone"></use>
+        </svg>
+        <h1 class="text-3xl font-semibold">Simon Twogood</h1>
+      </header>
+      {/* end Name */}
+
+      {/* Column */}
+      <div class="col-gap-md col-fill-auto md:h-letter-col md:col-count-2 print:h-letter-col print:col-count-2">
+        <section class="mt-8 first:mt-0">
+          {/* To keep in the same column */}
+          <div class="break-inside-avoid">
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
+              Executive Summary
+            </h2>
+
+            <section class="mb-4.5 break-inside-avoid">
+              <p>
+                Strategic software engineering leader with over 20 years of experience driving innovation across
+                diverse industries. Extensive experience in full stack development, cloud infrastructure, data
+                engineering, business analytics, and product-led growth strategies.
+              </p>
+            </section>
+
+            <section class="mb-4.5 break-inside-avoid">
+              <header>
+                <h3 class="text-base font-semibold leading-snug text-space-cadet-600">
+                  Full Stack Software Developer
+                </h3>
+                <p class="text-sm leading-normal text-space-cadet-250">Since 2004</p>
+              </header>
+            </section>
+          </div>
+
+          <section class="mb-4.5 break-inside-avoid">
+            <header>
+              <h3 class="text-base font-semibold leading-snug text-space-cadet-600">Engineering Manager</h3>
+              <p class="text-sm leading-normal text-space-cadet-250">Since 2018</p>
+            </header>
+          </section>
+        </section>
+
+        <section class="mt-8 first:mt-0">
+          <section class="mb-4.5 break-inside-avoid">
+            <header>
+              <h3 class="font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">Skills</h3>
+            </header>
+            <div class="my-3.2 last:pb-1.5">
+              <ul class="text-md -mb-1.6 -mr-1.6 flex flex-wrap leading-relaxed">
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Node
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  TypeScript
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  JavaScript
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Rust
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Java
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Kotlin
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  C#
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Python
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  PHP
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Ruby
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Rails
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  SQL
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  NoSQL
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  React
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Vue
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Angular
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  AWS Lambda
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Serverless
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  PostgreSQL
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  MySQL
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Azure SQL
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  GraphQL
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  AWS
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Docker
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  CI/CD
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Azure
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Databricks
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Snowflake
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Gen AI
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  LLM
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Scrum
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Kanban
+                </li>
+                <li class="print:prnt-box mb-1.6 mr-1.6 bg-skill px-2.5 text-sm text-secondary hover:bg-indigo-100">
+                  Product Management
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <section class="mt-8 first:mt-0">
+          {/* To keep in the same column */}
+          <div class="break-inside-avoid">
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
+              Projects
+            </h2>
+
+            <section class="mb-4.5 break-inside-avoid">
+              <header>
+                <h3 class="font-semibold leading-snug text-space-cadet-700">
+                  <a
+                    href="https://github.com/s2progger/kt-data-flow"
+                    class="group flex items-center hover:text-fuchsia-900 hover:underline"
+                  >
+                    <span>Kt Data Flow</span>
+                  </a>
+                </h3>
+              </header>
+              <p class="mt-2.1 text-sm leading-normal">Database Copying Utility written in Kotlin</p>
+            </section>
+          </div>
+
+          <section class="mb-4.5 break-inside-avoid">
+            <header>
+              <h3 class="font-semibold leading-snug text-space-cadet-700">
+                <a
+                  href="https://github.com/antrica-labs/og-liability-tracker"
+                  class="group flex items-center hover:text-fuchsia-900 hover:underline"
+                >
+                  <span>O&G Liability Tracker</span>
+                </a>
+              </h3>
+            </header>
+            <p class="mt-2.1 text-sm leading-normal">
+              A React.js and JVM based liability management tool to help Canadian oil and gas companies track their
+              LMR ratings and forecast future ratios.
+            </p>
+          </section>
+        </section>
+
+        <section class="mt-8 first:mt-0">
+          {/* To keep in the same column */}
+          <div class="break-inside-avoid">
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
+              Education
+            </h2>
+
+            <section class="mb-4.5 break-inside-avoid">
+              <header>
+                <h3 class="font-semibold leading-snug text-space-cadet-700">University of Calgary</h3>
+                <p class="text-sm leading-normal text-space-cadet-650">Bachelor of Science, Computer Science</p>
+              </header>
+            </section>
+          </div>
+
+          <section class="mb-4.5 break-inside-avoid">
+            <header>
+              <p class="text-sm leading-normal text-space-cadet-650">
+                Microsoft Certified Azure Data Engineer Associate
+              </p>
+              <p class="text-sm leading-normal text-space-cadet-650">FrontLine Leadership 2.0 (neuroSHIFT)</p>
+            </header>
+          </section>
+        </section>
+
+        <section class="mt-8 first:mt-0">
+          {/* To keep in the same column */}
+          <div class="break-inside-avoid">
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
+              Contact
+            </h2>
+
+            <section class="mb-4 break-inside-avoid">
+              <ul class="list-inside">
+                <li class="flex text-sm leading-normal text-space-cadet-700">
+                  <span>Calgary, Alberta</span>
+                </li>
+                <li class="mt-4 flex items-center align-baseline text-sm leading-normal text-space-cadet-700 md:text-base">
+                  <a
+                    href="https://linkedin.com/in/simon-twogood"
+                    class="text-sm hover:text-fuchsia-900 hover:underline"
+                  >
+                    https://linkedin.com/in/simon-twogood
+                  </a>
+                </li>
+                <li class="mt-2 flex items-center text-sm leading-normal text-space-cadet-700 md:text-base">
+
+                  <a href="https://github.com/s2progger" class="text-sm hover:text-fuchsia-900 hover:underline">
+                    https://github.com/s2progger
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="mt-8 first:mt-0">
+          {/* To keep in the same column */}
+          <div class="break-inside-avoid">
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-space-cadet-250 print:font-normal">
+              Job History
+            </h2>
+
+            <section class="break-inside-avoid">
+              <header>
+                <div class="mb-2 flex justify-between align-baseline">
+                  <h3 class="font-semibold leading-snug text-space-cadet-650">Meta</h3>
+                  <span class="date-range text-sm text-space-cadet-250">March 2024 - Present</span>
+                </div>
+              </header>
+              <div>
+                <ul class="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Rust</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    TypeScript
+                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">React</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">GraphQL</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    PostgreSQL
+                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">AWS</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">GIS</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  Senior Software Engineer (Contract)
+                </h4>
+                <ul class="text-sm">
+                  <li>
+                    Building Meta&apos;s global fiber optic network infrastructure management system. Engineering
+                    high-performance full stack solutions using GraphQL service federation and complex GIS
+                    functionality.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="mt-10 break-inside-avoid">
+              <header>
+                <div class="mb-2 flex justify-between align-baseline">
+                  <h3 class="font-semibold leading-snug text-space-cadet-650">Cymax Technology Group</h3>
+                  <span class="date-range text-sm text-space-cadet-250">June 2023 - March 2024</span>
+                </div>
+              </header>
+              <div>
+                <ul class="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">C#</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    TypeScript
+                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">React</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Azure</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Gen AI</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    Serverless
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  Engineering Manager
+                </h4>
+                <ul class="text-sm">
+                  <li>
+                    Enhanced e-commerce product deployment reliability through the implementation of automated CI/CD
+                    pipelines in Microsoft Azure while transitioning the team to Trunk Based Development, increasing
+                    deployment frequency from monthly to daily.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="mt-10 break-inside-avoid">
+              <header>
+                <div class="mb-2 flex justify-between align-baseline">
+                  <h3 class="font-semibold leading-snug text-space-cadet-700">CostCertified (YCombinator S21)</h3>
+                  <span class="date-range text-sm text-space-cadet-250">Oct 2021 - June 2023</span>
+                </div>
+              </header>
+              <div>
+                <ul class="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">SaaS</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Node</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Vue</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    JavaScript
+                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">PHP</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Docker</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">GraphQL</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">AWS</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    OpenSearch
+                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">RDS</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">SQS</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Lambda</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">AppSync</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  Director, Product Development
+                </h4>
+
+                <ul class="text-sm">
+                  <li class="leading-normal">
+                    Successfully led a cross-functional engineering department to adopt Product Led Development
+                    methodologies, achieving a 600% growth in subscription revenue and a 50% reduction in processing
+                    fees through strategic partnership and infrastructure enhancements.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  Senior Lead Full Stack Developer
+                </h4>
+
+                <ul class="text-sm">
+                  <li class="leading-normal">
+                    Transformed construction project estimation as a Full Stack Developer, creating a shoppable cost
+                    estimation and multi-merchant payment platform that achieved $5 million in annualized payments.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="mt-10 break-inside-avoid">
+              <header>
+                <div class="mb-2 flex justify-between align-baseline">
+                  <h3 class="font-semibold leading-snug text-space-cadet-700">ENMAX Corporation</h3>
+                  <span class="date-range text-sm text-space-cadet-250">2018 - Oct 2021</span>
+                </div>
+              </header>
+              <div>
+                <ul class="-ml-0.5 flex flex-wrap text-sm leading-relaxed">
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Azure</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    Databricks
+                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Data Lake</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Streaming</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    Serverless
+                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Azure SQL</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">React</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">
+                    JavaScript
+                  </li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">Python</li>
+                  <li class="print:prnt-box m-0.5 bg-skill px-2 text-secondary hover:bg-indigo-100">C#</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="mt-2 text-sm2 font-semibold leading-normal text-space-cadet-650">
+                  Manager, Enterprise Data & Digital Innovations
+                </h4>
+
+                <ul class="text-sm">
+                  <li class="leading-normal">
+                    Spearheaded digital transformation initiatives including the development of revenue-generating web
+                    properties and the architectural design of Calgary&apos;s Advanced Metering Infrastructure.
+                    Championed cloud solutions, including a 50TB Azure data warehousing strategy.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="mt-8 break-inside-avoid">
+              <div class="grid grid-cols-3 items-baseline space-y-2">
+                <div class="text-left text-sm font-semibold leading-snug text-space-cadet-700">Spyglass</div>
+                <div class="text-left text-sm">Analytic Insights Lead</div>
+                <div class="date-range text-resume-mono text-right text-sm text-space-cadet-250">2013 - 2018</div>
+              </div>
+              <div class="grid grid-cols-3 items-baseline space-y-2">
+                <div class="text-left text-sm font-semibold text-space-cadet-700">Penn West</div>
+                <div class="text-left text-sm">Software Developer</div>
+                <div class="date-range text-resume-mono text-right text-sm text-space-cadet-250">2011 - 2013</div>
+              </div>
+              <div class="grid grid-cols-3 items-baseline space-y-2">
+                <div class="text-left text-sm font-semibold text-space-cadet-700">Siconix Inc.</div>
+                <div class="text-left text-sm">Software Developer</div>
+                <div class="date-range text-resume-mono text-mono text-right text-sm text-space-cadet-250">
+                  2007 - 2011
+                </div>
+              </div>
+              <div class="grid grid-cols-3 items-baseline space-y-2">
+                <div class="text-left text-sm font-semibold text-space-cadet-700">Warp Internet Labs</div>
+                <div class="text-left text-sm">Web Developer</div>
+                <div class="date-range text-right text-sm text-space-cadet-250">2004 - 2007</div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+      {/* end Column */}
+    </div>
+    {/* end Page */}
+  </main>
+</Layout>
+
+<style>
+    @screen print {
+        @page {
+            margin: 0;
+        }
+
+        body {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color: black !important;
+        }
+
+        h1, h2, h3, p, li {
+            color: black !important;
+        }
+
+        html {
+            font-size: 12.288px !important;
+        }
+    }
+
+    html {
+        font-size: 13.176471px;
+    }
+
+    /* For Letter size */
+
+    @screen sm {
+        html {
+            font-size: calc( 13.176471px + (16 - 13.176471) * (100vw - 640px) / (833 - 640) );
+        }
+    }
+
+    @screen md {
+        html {
+            font-size: calc( 12.288px + (16 - 12.288) * (100vw - 833px) / (1079.5 - 833) );
+        }
+    }
+
+    /* For A4 size */
+
+    /* @screen sm {
+      html {
+        font-size: calc( 13.176471px + (16 - 13.176471) * (100vw - 640px) / (811 - 640) );
+      }
+    }
+
+    @screen md {
+      html {
+        font-size: calc( 12.288px + (16 - 12.288) * (100vw - 811px) / (1051 - 811) );
+      }
+    } */
+
+    @screen lg {
+        html {
+            font-size: 16px;
+        }
+    }
+
+    body .icon-parent::before {
+        content: "A";
+        width: 0;
+        visibility: hidden;
+        display: inline-block;
+    }
+
+    body .initials-container {
+        min-width: 2.31rem;
+        padding-bottom: 0.6875rem;
+        padding-top: 0.6875rem;
+    }
+
+    body .resume {
+        font-family: "Fira Sans", sans-serif;
+    }
+
+    body .date-range {
+        font-family: "Fira Mono", monospace;
+    }
+</style>

@@ -1,7 +1,0 @@
-name = "personal-website-worker"
-
-[vars]
-GITHUB_PAT = ""
-FULL_CONTACT_KEY = ""
-RESUME_CONTACT_EMAIL = ""
-RESUME_CONTACT_PHONE = ""

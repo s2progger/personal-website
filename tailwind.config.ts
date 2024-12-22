@@ -1,109 +1,13 @@
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
+import daisyui from "daisyui";
 
-const config = {
-  darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
-  prefix: "",
+export default {
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  daisyui: {
+    themes: ["night"],
+  },
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
-    extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        skill: "#e9ecee",
-        "space-cadet": {
-          DEFAULT: "#081224",
-          "150": "#03336d",
-          "200": "#052c5e",
-          "250": "#07264e",
-          "550": "#081f40",
-          "600": "#091931",
-          "650": "#081224",
-          "700": "#020817",
-        },
-      },
-      fontSize: {
-        sm2: "0.9375rem", // 15px label
-      },
-      maxWidth: {
-        letter: "66.40625rem",
-        a4: "64.609375rem",
-      },
-      height: {
-        letter: "85.9375rem",
-        "letter-col": "71.625rem",
-        "letter-col-full": "77.9375rem",
-        a4: "91.350883rem",
-        "a4-col": "77.038383rem",
-        "a4-col-full": "83.350883rem",
-      },
-      spacing: {
-        "0.5": "2px", // 2px
-        "1.5": "0.375rem", // 6px
-        "1.6": "0.4375rem", // 7px
-        "2.1": "0.5625rem", // 9px
-        "2.5": "10px", // 10px
-        "3.2": "0.8125rem", // 16px
-        "4.5": "1.125rem", // 8px
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-    },
     screens: {
       print: { raw: "print" },
       xsm: "500px",
@@ -114,6 +18,7 @@ const config = {
     },
   },
   plugins: [
+    daisyui,
     plugin(function ({ addBase, addUtilities, theme }) {
       addBase({
         body: {
@@ -247,5 +152,3 @@ const config = {
     }),
   ],
 } satisfies Config;
-
-export default config;

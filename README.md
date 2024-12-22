@@ -1,45 +1,48 @@
-# Personal Portfolio
-
-This is my personal portfolio website built using Remix, Vite, and Cloudflare Workers.
-
-## Remix + Vite + Cloudflare
-
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
-
-## Environment Variables
-
-A wrangler.sample.toml file is provided in the root of the project to demonstrate how to set or add local development 
-environment variables. You will need to create a file named `wrangler.toml` from this sample file, and set the 
-environment variables in it.
-
-If you are adding a new environment variable, you will also need to add it to `Env` interface in `load-context.ts` so 
-that TypeScript knows about it.
-
-## Development
-
-Run the Vite dev server:
+# Astro Starter Kit: Basics
 
 ```sh
-npm run dev
+npm create astro@latest -- --template basics
 ```
 
-To run Wrangler:
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-```sh
-npm run build
-npm run start
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-## Deployment
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-Cloudflare has been connected to the repository and any push to the `main` branch will trigger a deployment. To see a 
-preview of a change, you can push to a branch that stats with `feature/` and Cloudflare will create a preview site
-and URL for it.
+## 🧞 Commands
 
-## Node Version
+All commands are run from the root of the project, from a terminal:
 
-To change the Node version, updates must be made in the following places:
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-- The docker image in `.devcontainer/devcontainer.json`
-- `package.json` under `engines.node` and `volta` (if using Volta)
-- In Cloudflare Workers, the Node version is set in the `NODE_VERSION` environment variable
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
