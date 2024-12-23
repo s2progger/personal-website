@@ -8,6 +8,9 @@ export default defineConfig({
   env: {
     schema: {
       GITHUB_PAT: envField.string({ context: "server", access: "secret" }),
+      FULL_CONTACT_KEY: envField.string({ context: "server", access: "secret" }),
+      RESUME_CONTACT_EMAIL: envField.string({ context: "server", access: "secret" }),
+      RESUME_CONTACT_PHONE: envField.string({ context: "server", access: "secret" }),
     },
   },
 });
