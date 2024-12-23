@@ -1,9 +1,11 @@
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 
-const config = {
-  darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+export default {
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  daisyui: {
+    themes: ["night"],
+  },
   prefix: "",
   theme: {
     container: {
@@ -51,13 +53,13 @@ const config = {
         skill: "#e9ecee",
         "space-cadet": {
           DEFAULT: "#081224",
-          "150": "#03336d",
-          "200": "#052c5e",
-          "250": "#07264e",
-          "550": "#081f40",
-          "600": "#091931",
-          "650": "#081224",
-          "700": "#020817",
+          150: "#03336d",
+          200: "#052c5e",
+          250: "#07264e",
+          550: "#081f40",
+          600: "#091931",
+          650: "#081224",
+          700: "#020817",
         },
       },
       fontSize: {
@@ -76,13 +78,13 @@ const config = {
         "a4-col-full": "83.350883rem",
       },
       spacing: {
-        "0.5": "2px", // 2px
-        "1.5": "0.375rem", // 6px
-        "1.6": "0.4375rem", // 7px
-        "2.1": "0.5625rem", // 9px
-        "2.5": "10px", // 10px
-        "3.2": "0.8125rem", // 16px
-        "4.5": "1.125rem", // 8px
+        0.5: "2px", // 2px
+        1.5: "0.375rem", // 6px
+        1.6: "0.4375rem", // 7px
+        2.1: "0.5625rem", // 9px
+        2.5: "10px", // 10px
+        3.2: "0.8125rem", // 16px
+        4.5: "1.125rem", // 8px
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -247,5 +249,3 @@ const config = {
     }),
   ],
 } satisfies Config;
-
-export default config;

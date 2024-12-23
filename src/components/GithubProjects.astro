@@ -1,0 +1,91 @@
+---
+import { graphql } from "@octokit/graphql";
+import { GITHUB_PAT } from "astro:env/server";
+
+const PROJECTS_TO_SHOW = 6;
+
+type GraphQLResponse = {
+  user: User;
+};
+
+type User = {
+  pinnedItems: {
+    nodes: Repository[];
+  };
+};
+
+type Repository = {
+  name: string;
+  description: string;
+  url: string;
+  primaryLanguage: {
+    color: string;
+    name: string;
+  };
+};
+
+const graphqlWithAuth = graphql.defaults({
+  headers: {
+    authorization: `token ${GITHUB_PAT}`,
+  },
+});
+
+const query = `
+    {
+      user(login: "s2progger") {
+        pinnedItems(first: ${PROJECTS_TO_SHOW}, types: [REPOSITORY]) {
+          nodes {
+            ... on Repository {
+              name
+              description
+              url
+              primaryLanguage {
+                color
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+const { user } = await graphqlWithAuth<GraphQLResponse>(query);
+---
+
+<section class="pt-5 lg:px-32 lg:pt-10">
+  <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+    <div class="flex flex-col space-y-1.5 p-6">
+      <h3 class="text-2xl font-semibold leading-none tracking-tight">Project Highlights</h3>
+    </div>
+    <div class="p-6">
+      {
+        user?.pinnedItems?.nodes ? (
+          <ul>
+            {user.pinnedItems.nodes.map((repo: Repository) => (
+              <li class="last: last:border-non mb-4 border-b pb-4 last:mb-0 last:border-none last:pb-0">
+                <div class="flex items-baseline justify-between space-x-2">
+                  <h2 class="font-bold">
+                    <a href={repo.url} target="_blank" rel="noopener noreferrer">
+                      {repo.name}
+                    </a>
+                  </h2>
+                  <div>
+                    <span
+                      class="mr-1 inline-block h-3 w-3 rounded-full"
+                      style=`background-color: ${repo.primaryLanguage["color"]}`
+                    ></span>
+                    <span class="text-sm">{repo.primaryLanguage["name"]}</span>
+                  </div>
+                </div>
+                <p class="text-sm text-muted-foreground">{repo.description}</p>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="text-muted-foreground">No projects to show</p>
+        )
+      }
+    </div>
+  </div>
+</section>
