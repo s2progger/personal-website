@@ -291,7 +291,7 @@ const key = Astro.url.searchParams.get("key");
                   </a>
                 </li>
                 {
-                  key === FULL_CONTACT_KEY && (
+                  key && key === FULL_CONTACT_KEY && (
                     <>
                       <li class="mt-2 leading-normal text-space-cadet-700 md:text-base">
                         <a href=`mailto:${RESUME_CONTACT_EMAIL}` class="flex items-center space-x-2 align-baseline text-sm text-sm hover:text-fuchsia-900 hover:underline">
