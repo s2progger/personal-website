@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Sitemap
+Sitemap: https://simontwogood.dev/sitemap-index.xml
+
+# Crawl-delay
+Crawl-delay: 10
