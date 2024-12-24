@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A modern and responsive personal portfolio website built with [Astro](https://astro.build) - the all-in-one web framework for building fast, content-focused websites.
+A modern and responsive personal portfolio website built with [Astro](https://astro.build).
 
 ## 🚀 Features
 
