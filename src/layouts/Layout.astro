@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { ClientRouter } from 'astro:transitions';
 ---
 
 <!doctype html>
@@ -13,11 +14,11 @@ import "../styles/global.css";
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-
     <meta name="theme-color" content="#030822	" />
+    <ClientRouter />
   </head>
   <body class="dark mx-auto max-w-screen-xl p-4">
-    <header class="print:hidden">
+    <header class="print:hidden" transition:persist>
       <nav>
         <div class="flex flex-wrap items-center justify-evenly justify-items-stretch gap-2 md:justify-between">
           <a
