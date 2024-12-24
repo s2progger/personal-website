@@ -4,10 +4,15 @@
   "forwardPorts": [4321],
   "customizations": {
     "jetbrains": {
-      "backend": "WebStorm"
+      "backend": "WebStorm",
+      "plugins" : [
+        "org.jetbrains.plugins.astro"
+      ],
     },
     "vscode": {
-      "extensions": ["esbenp.prettier-vscode", "pflannery.vscode-versionlens", "astro-build.astro-vscode"]
+      "extensions": [
+        "astro-build.astro-vscode"
+      ]
     }
   }
 }
