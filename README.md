@@ -18,23 +18,18 @@ A modern and responsive personal portfolio website built with [Astro](https://as
 
 ## 🏗️ Getting Started
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/personal-website.git
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 cd personal-website
 npm install
 ```
 
-3. Start the development server:
+2. Start the development server:
 ```bash
 npm run dev
 ```
 
-4. Build for production:
+3. Build for production:
 ```bash
 npm run build
 ```
