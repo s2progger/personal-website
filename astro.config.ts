@@ -1,14 +1,17 @@
 import { defineConfig, envField } from "astro/config";
 
-import tailwind from "@astrojs/tailwind";
+
 import cloudflare from "@astrojs/cloudflare";
 
 import sitemap from "@astrojs/sitemap";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://simontwogood.dev",
-  integrations: [tailwind(), sitemap()],
+  integrations: [sitemap()],
+
   env: {
     schema: {
       GITHUB_PAT: envField.string({ context: "server", access: "secret" }),
@@ -17,5 +20,10 @@ export default defineConfig({
       RESUME_CONTACT_PHONE: envField.string({ context: "server", access: "secret" }),
     },
   },
+
   adapter: cloudflare(),
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

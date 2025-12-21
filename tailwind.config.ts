@@ -3,9 +3,7 @@ import plugin from "tailwindcss/plugin";
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  daisyui: {
-    themes: ["night"],
-  },
+
   prefix: "",
   theme: {
     container: {
@@ -107,7 +105,6 @@ export default {
       },
     },
     screens: {
-      print: { raw: "print" },
       xsm: "500px",
       sm: "640px",
       md: "768px",
